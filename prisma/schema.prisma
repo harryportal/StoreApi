@@ -21,6 +21,7 @@ model User {
   email String @unique @db.VarChar(255)
   username String @db.VarChar(255)
   password String @db.VarChar(255)
+  profile Profile?
 }
 
 model Product {
@@ -47,4 +48,14 @@ model Category {
   id String @id @default(uuid())
   name String @db.VarChar(255)
   products Product[]
+}
+
+model Profile {
+  id String @id @default(uuid())
+  firstname String @db.VarChar(255)
+  lastname String @db.VarChar(255)
+  adress String @db.VarChar(255)
+  imageUrl String?
+  userId String @unique
+  user User @relation(fields: [userId], references: [id])
 }
