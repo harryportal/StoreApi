@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  backend:
+    container_name: node_frontendmasters
+    build: .
+    environment:
+      - NODE_ENV=developement
+    ports:
+       - "3001:3001"
+    volumes:
+      - .:/app
+  
+  postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data 
+
+
+volumes:
+  db-data:
