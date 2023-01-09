@@ -10,6 +10,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// products -- one to many with product rating
+// when returning products for a particular category i want to return sorted by the product rating
+// categories - one to many with products table
+// User Model
+// Product Rating  -- {content: string, rate: int, productId: int} 
+
 model User {
   id String @id @default(uuid())
   email String @unique @db.VarChar(255)

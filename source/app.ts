@@ -1,6 +1,7 @@
 import express from 'express';
 import morgan from  'morgan'
 import cors from  'cors'
+import router from './routers/Auth';
 import { ErrorHandler } from './middleware/error';
 import { Application } from 'express';
 
@@ -15,7 +16,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
 
-// app.use('/api',router);
+app.use('/api/v1',router);
 
 app.use("*",ErrorHandler.pagenotFound());
 app.use(ErrorHandler.handle());
