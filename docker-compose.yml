@@ -1,12 +1,12 @@
 version: "3.8"
 services:
   backend:
-    container_name: node_frontendmasters
+    container_name: Ecommerce_Api
     build: .
     environment:
       - NODE_ENV=developement
     ports:
-       - "3001:3001"
+       - "3000:3000"
     volumes:
       - .:/app
   
