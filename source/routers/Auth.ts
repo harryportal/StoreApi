@@ -2,7 +2,7 @@ import RequestValidator from "../middleware/validation";
 import { protect } from "../middleware/auth";
 import { Router } from "express";
 import  AuthController from "../controllers/Auth";
-import { SignIn, SignUp } from "../../prisma/schemaValidation";
+import { SignUp,SignIn } from "../serializers/Auth";
 
 const router = Router();
 
