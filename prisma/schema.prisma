@@ -30,6 +30,7 @@ model Product {
   description String 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  imageUrl String?
   ratings ProductRating[]
   categoryId String
   category Category @relation(fields: [categoryId], references: [id])
@@ -44,8 +45,9 @@ model ProductRating{
   product Product @relation(fields: [productId], references: [id])
 }
 
-model Category {
+model Category { 
   id String @id @default(uuid())
+  imageUrl String?
   name String @db.VarChar(255)
   products Product[]
 }

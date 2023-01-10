@@ -3,6 +3,7 @@ import { protect } from "../middleware/auth";
 import { Router } from "express";
 import  AuthController from "../controllers/Auth";
 import { SignUp,SignIn } from "../serializers/Auth";
+import 'express-async-errors'
 
 const router = Router();
 

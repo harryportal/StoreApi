@@ -56,7 +56,7 @@ class AuthError extends ApiError{
 }
 
 class BadRequestError extends ApiError{
-    constructor(public message:string, public errors: string[]){
+    constructor(public message:string, public errors?: string[]){
         super(message, 400, errors)
     }
 }

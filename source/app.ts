@@ -4,6 +4,7 @@ import cors from  'cors'
 import router from './routers/Auth';
 import { ErrorHandler } from './middleware/error';
 import { Application } from 'express';
+import 'express-async-errors'
 
 
 
