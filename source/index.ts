@@ -1,7 +1,6 @@
 import app from "./app"
 import http from 'http'
 import * as dotenv from 'dotenv'
-import 'express-async-errors'
 
 
 dotenv.config();

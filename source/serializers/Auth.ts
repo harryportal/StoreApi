@@ -1,4 +1,4 @@
-import { IsDefined, IsEmail, IsNotEmpty, IsOptional, IsString, Length } from "class-validator";
+import { IsDefined, IsEmail, IsNotEmpty, IsOptional, IsPhoneNumber, IsString, Length } from "class-validator";
 
 class SignIn{
     @IsEmail()
@@ -26,12 +26,12 @@ class Profile {
     @Length(2, 50)
     address: string
 
-    @IsString()
-    @IsOptional()
-    imageUrl?: string
+    @IsPhoneNumber()
+    phone: number
 
     @IsString()
-    userId: string
+    @IsOptional()
+    imageUrl: string
 }
 
 export {SignUp, SignIn, Profile}

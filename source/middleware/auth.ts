@@ -1,11 +1,10 @@
 import { Response, NextFunction } from 'express';
-import AuthRequest from '../utils/userRequest';
+import AuthRequest from '../utils/user';
 import jwt from 'jsonwebtoken';
 import { AuthError} from './error';
-import { asyncWrapper } from '../utils/asyncwrapper';
 
 
-export const protect = asyncWrapper((req: AuthRequest,res: Response,next: NextFunction)=>{
+export const protect = (req: AuthRequest,res: Response,next: NextFunction)=>{
     const bearer = req.headers.authorization;
     if(!bearer){
         throw new AuthError('No Authentication Provided');
@@ -25,5 +24,5 @@ export const protect = asyncWrapper((req: AuthRequest,res: Response,next: NextFu
         throw new AuthError('Invalid Token Provided');
     }
 
-});
+};
  

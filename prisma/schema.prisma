@@ -46,7 +46,7 @@ model ProductRating{
 }
 
 model Category { 
-  id String @id @default(uuid())
+  id String @id @default(uuid()) 
   imageUrl String?
   name String @db.VarChar(255)
   products Product[]
@@ -56,7 +56,8 @@ model Profile {
   id String @id @default(uuid())
   firstname String @db.VarChar(255)
   lastname String @db.VarChar(255)
-  adress String @db.VarChar(255)
+  address String @db.VarChar(255)
+  phone String
   imageUrl String?
   userId String @unique
   user User @relation(fields: [userId], references: [id])
