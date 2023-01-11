@@ -5,13 +5,14 @@ import  AuthController from "../controllers/Auth";
 import { SignUp,SignIn, Profile } from "../serializers/Auth";
 import 'express-async-errors'
 
-const router = Router();
+const authRouter = Router();
 
-router.post('/signup',RequestValidator.validate(SignUp), AuthController.signUp)
-router.post('/login', RequestValidator.validate(SignIn),  AuthController.signIn)
-router.post('/addprofile', protect, RequestValidator.validate(Profile), AuthController.addProfile)
-router.put('/editprofile', protect, RequestValidator.validate(Profile), AuthController.editProfile)
-router.get('/getprofile',  protect, AuthController.getProfile)
+authRouter.post('/signup',RequestValidator.validate(SignUp), AuthController.signUp)
+authRouter.post('/login', RequestValidator.validate(SignIn),  AuthController.signIn)
+authRouter.post('/profile', protect, RequestValidator.validate(Profile), AuthController.addProfile)
+authRouter.put('/profile', protect, RequestValidator.validate(Profile), AuthController.editProfile)
+authRouter.get('/profile',  protect, AuthController.getProfile)
+
+export default authRouter
 
 
-export default router

@@ -22,6 +22,7 @@ model User {
   username String @db.VarChar(255)
   password String @db.VarChar(255)
   profile Profile?
+  ratings ProductRating[]
 }
 
 model Product {
@@ -41,6 +42,8 @@ model ProductRating{
   content String 
   rating Int @default(0)
   createdAt DateTime @default(now())
+  userId String
+  user User @relation(fields: [userId],references: [id])
   productId String
   product Product @relation(fields: [productId], references: [id])
 }
