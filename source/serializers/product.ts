@@ -1,9 +1,8 @@
 import { IsNotEmpty, IsNumber, IsString, Max, Min } from "class-validator"
 
 class ProductRating{
-
     @IsString()
-    content: strin
+    content: string
 
     @Min(1)
     @Max(5)
