@@ -9,7 +9,7 @@ const productRouter = Router();
 productRouter.get('/', Product.getProducts)
 productRouter.get('/:id', Product.getProduct )
 productRouter.get('/categories/:id', Product.getProductsByCategory )
-productRouter.post('/:id/ratings', protect, Product.addProductRating )
+productRouter.post('/:id/ratings', protect, Product.addReview)
 
 export default productRouter
 
