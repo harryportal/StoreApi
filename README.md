@@ -33,7 +33,8 @@ ROADMAP:
 - [x] Set up model with Prisma
 - [x] Implement Authentication Endpoints
 - [x] Implement Product Review and Adding Endpoints
-- [ ] Implement Payment with Paystack Api
+- [ ] Implement Payment Endpoints with Paystack Api
 - [ ] Add Logging with winston
 - [x] Write Unit and Integration Test
+- [X] Deploy to Heroku:rocket: 
 
