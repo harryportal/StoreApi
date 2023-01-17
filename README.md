@@ -33,6 +33,7 @@ ROADMAP:
 - [x] Set up model with Prisma
 - [x] Implement Authentication Endpoints
 - [x] Implement Product Review and Adding Endpoints
+- [ ] Add Swagger UI
 - [ ] Implement Payment Endpoints with Paystack Api
 - [ ] Add Logging with winston
 - [x] Write Unit and Integration Test
