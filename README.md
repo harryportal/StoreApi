@@ -10,7 +10,7 @@ To run on a development server:
 > npm install
 ```
 ***
-Populate the env files using the .env.samples
+Populate the Env Files
 ***
 Start the application and run migration:
 ```sh
