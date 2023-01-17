@@ -13,7 +13,6 @@ services:
     depends_on:
       - test
 
-  
   postgres:
     container_name: postgres_container
     image: postgres

@@ -1,5 +1,6 @@
 import request from 'supertest'
 import app from '../../app'
+import prisma from '../../utils/db'
 
 describe("Test for Signing Up Endpoint", ()=>{
     it("Should send a 200 status code if all input is valid", async ()=>{
@@ -25,7 +26,7 @@ describe("Test for Signing in Endpoint", ()=>{
     it("Should send a 200 status code and token for a valid user", async ()=>{
         const response = await request(app).post('/api/v1/auth/login').send({
             username: "username",
-            email:"name@gmail.com",
+            email:"username@gmail.com",
             password:"username"
         })
         expect(response.statusCode).toBe(200)
@@ -39,4 +40,9 @@ describe("Test for Signing in Endpoint", ()=>{
         })
         expect(response.statusCode).toBe(400)
     })
+})
+
+afterAll(async()=>{
+    await prisma.user.deleteMany()
+    prisma.$disconnect()
 })
