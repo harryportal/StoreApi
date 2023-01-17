@@ -9,15 +9,21 @@ To run on a development server:
 > cd EcommerceApi_Node
 > npm install
 ```
-
-Populate the env files using the .evn.samples
-
+***
+Populate the env files using the .env.samples
+***
 Start the application and run migration:
 ```sh
 > npm run start
 > npm run migrate
 ```
 
+Set up test DB and run tests:
+```sh
+> npm run migrate:test
+> npm run test
+```
+***
 Run `npm run logs` to view server logs
 ***
 
