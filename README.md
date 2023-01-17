@@ -14,7 +14,7 @@ Populate the env files using the .env.samples
 ***
 Start the application and run migration:
 ```sh
-> npm run start
+> npm run docker:up
 > npm run migrate
 ```
 
@@ -26,6 +26,7 @@ Set up test DB and run tests:
 ***
 Run `npm run logs` to view server logs
 ***
+Run `npm run docker:down` to kill Server
 
 ROADMAP:
 - [x] Dockerise the Application
