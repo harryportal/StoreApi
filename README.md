@@ -36,5 +36,5 @@ ROADMAP:
 - [ ] Implement Payment Endpoints with Paystack Api
 - [ ] Add Logging with winston
 - [x] Write Unit and Integration Test
-- [X] Deploy to Heroku:rocket: 
+- [ ] Deploy to Heroku:rocket: 
 
