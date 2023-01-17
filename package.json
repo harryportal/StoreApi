@@ -15,10 +15,16 @@
     "typescript": "^4.9.4"
   },
   "scripts": {
-    "dev": "nodemon -L source/index.ts",
-    "migrate": "dotenv -e .env.development -- npx prisma migrate dev --name init",
-    "start": "docker exec -it Ecommerce_Api npm run migrate",
-    "migrate:test":"docker exec -it Ecommerce_Api dotenv -e .env.test -- npx prisma migrate dev --name init",
+    "dev": "cross-env NODE_ENV=development nodemon -L source/index.ts",
+    "start": "docker-compose up -d",
+    "logs":"docker-compose logs -f backend",
+    "stop": "docker-compose down",
+
+    "dev:migrate": "dotenv -e .env.development -- npx prisma migrate dev --name init",
+    "test:migrate:": "dotenv -e .env.test -- npx prisma migrate dev --name init",
+    
+    "migrate": "docker-compose exec backend npm run dev:migrate",
+    "migrate:test": "docker-compose exec backend npm run test:migrate",
     "test": "jest --watchAll"
   },
   "dependencies": {
@@ -28,6 +34,7 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "express-async-errors": "^3.1.1",
     "http-status-codes": "^2.2.0",
