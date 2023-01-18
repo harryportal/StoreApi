@@ -29,7 +29,7 @@ Run `npm run logs` to view server logs
 Run `npm run docker:down` to kill Server
 ***
 ROADMAP:
-- [x] Dockerise the Application
+- [x] Dockerize the Application
 - [x] Set up model with Prisma
 - [x] Implement Authentication Endpoints
 - [x] Implement Product Review and Adding Endpoints
