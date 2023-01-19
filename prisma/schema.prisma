@@ -23,6 +23,7 @@ model User {
   username String @db.VarChar(255)
   password String @db.VarChar(255)
   profile Profile?
+  phone String
   reviews Review[]  // the reviews the user has made on different product
   orders Order[] // the orders the user have made
 }
@@ -65,7 +66,6 @@ model Profile {
   lastname String @db.VarChar(255)
   address String @db.VarChar(255)
   userId String @unique
-  phone String
   imageUrl String?
   user User @relation(fields: [userId], references: [id])
 }
@@ -80,10 +80,18 @@ model OrderDetails{
   @@id([productId, orderId])
 }
 
+enum Status {
+  FAILED
+  SUCCESS
+  PENDING
+}
 
 model Order {
   id String @id @default(uuid()) 
-  reference String
+  status Status @default(PENDING)
+  createdAt DateTime @default(now())
+  paidAt DateTime?
+  paymentReference String?
   totalPrice Decimal?
   userId String 
   user User @relation(fields: [userId], references: [id])

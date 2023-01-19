@@ -2,7 +2,7 @@ import prisma from '../utils/db'
 import { Request, Response } from 'express';
 import { comparePassword, createJWT, hashPassword } from '../utils/auth';
 import { BadRequestError } from '../middleware/error';
-import AuthRequest from '../utils/user';
+import AuthRequest from '../utils/interface';
 
 
 export default class AuthController{
