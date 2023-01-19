@@ -1,5 +1,4 @@
-import { Order } from '@prisma/client';
-import {Response, Request} from 'express'
+import {Response} from 'express'
 import prisma from '../utils/db';
 import AuthRequest from '../utils/user';
 import generateUniqueDigits from '../utils/random';
@@ -14,17 +13,18 @@ class OrderController{
     static createOrder = async(req: AuthRequest, res: Response)=>{
         const ordertails: OrderDetails[] = req.body
         const id = req.user.id
+        const reference = generateUniqueDigits()
 
+        // create an order Entity for all the orders made
         const orderEntity = await prisma.order.create({
             data:{
-                user: { connect: { id }},
-                reference: generateUniqueDigits()
+                user: { connect: { id }}, reference
             } }) 
         
-
         let totalPrice: number = 0
+        // get the price of each product and compute the total price as that is been done
         for(let order of ordertails){
-            const product = await prisma.product.findUnique({
+            const product = await prisma.product.findUniqueOrThrow({
                 where: { id : order.productId}
             })
             order.price = parseFloat(product!.price.toFixed())
@@ -41,12 +41,15 @@ class OrderController{
                 }
            })
         }
-
+        // update the order with the total price that will be sent to flutterwave
         await prisma.order.update({
             where: {id: orderEntity.id},
             data:{ totalPrice }
         })
+        // flutterwave logic takes over from here
         
         
         
     }}
+
+    export default OrderController
