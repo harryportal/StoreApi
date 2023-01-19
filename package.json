@@ -14,21 +14,23 @@
     "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
   },
+  
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon -L source/index.ts",
     "docker:up": "docker-compose up -d",
-    "docker:logs":"docker-compose logs -f backend",
+    "docker:logs": "docker-compose logs -f backend",
     "docker:down": "docker-compose down",
     "dev:migrate": "dotenv -e .env.development -- npx prisma migrate dev --name init",
     "test:migrate": "dotenv -e .env.test -- npx prisma migrate dev --name init",
     "migrate": "docker-compose exec backend npm run dev:migrate",
     "migrate:test": "docker-compose exec backend npm run test:migrate",
-    "docker:test":"dotenv -e .env.test -- npx jest --watchAll",
+    "docker:test": "dotenv -e .env.test -- npx jest --watchAll",
     "test": "docker-compose exec backend npm run docker:test"
   },
   "dependencies": {
     "@prisma/client": "^4.8.1",
     "@types/bcryptjs": "^2.4.2",
+    "axios": "^1.2.2",
     "bcryptjs": "^2.4.3",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
