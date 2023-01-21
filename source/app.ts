@@ -5,6 +5,7 @@ import authRouter from './routers/Auth';
 import { ErrorHandler } from './middleware/error';
 import { Application } from 'express';
 import productRouter from './routers/product';
+import OrderController from './controllers/transaction';
 
 
 
@@ -19,6 +20,7 @@ app.use(express.urlencoded({extended: true}))
 
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/products', productRouter);
+app.use('/api/v1/transaction', OrderController)
 
 app.use("*",ErrorHandler.pagenotFound());
 app.use(ErrorHandler.handle());
