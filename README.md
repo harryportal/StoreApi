@@ -34,8 +34,8 @@ ROADMAP:
 - [x] Implement Authentication Endpoints
 - [x] Implement Product Review and Adding Endpoints
 - [ ] Add Swagger UI
-- [ ] Implement Payment Endpoints with Paystack Api
-- [ ] Add Logging with winston
+- [x] Implement Payment Endpoints with Flutterwave Api
+- [x] Add Logging with winston
 - [x] Write Unit and Integration Test
 - [ ] Deploy to Heroku:rocket: 
 
