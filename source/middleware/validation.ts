@@ -2,6 +2,7 @@ import {Request, Response, NextFunction } from 'express';
 import {validate} from 'class-validator';
 import { BadRequestError } from '../middleware/error';
 import { ClassConstructor, plainToInstance } from 'class-transformer';
+import logger from '../utils/winston';
 
 
 // a middleware to validate the user input
@@ -15,7 +16,7 @@ export default class RequestValidator{
                     for (const error of errors){
                         rawErrors = rawErrors.concat(...rawErrors, Object.values(error.constraints?? []))
                     }
-                    console.log(rawErrors)
+                    logger.error(rawErrors)
                     next(new BadRequestError('Input validation failed!', rawErrors))
                 }
             })

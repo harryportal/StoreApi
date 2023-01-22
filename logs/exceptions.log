@@ -1,0 +1,120 @@
+2023-01-22 23:06:53 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(5,8): error TS2613: Module '"/app/source/utils/interface"' has no default export. Did you mean to use 'import { AuthRequest } from "/app/source/utils/interface"' instead?[39m
+[31msource/controllers/Auth.ts(16,13): error TS2322: Type '{ username: any; email: any; password: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.[39m
+[31m  Type '{ username: any; email: any; password: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.[39m
+[31m    Property 'phone' is missing in type '{ username: any; email: any; password: string; }' but required in type 'UserCreateInput'.[39m
+[31msource/controllers/Auth.ts(44,47): error TS2322: Type '{ firstname: any; lastname: any; address: any; phone: any; imageUrl: any; user: { connect: { id: any; }; }; }' is not assignable to type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31msource/controllers/Auth.ts(73,57): error TS2322: Type '{ firstname: any; lastname: any; address: any; imageUrl: any; phone: any; }' is not assignable to type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(5,8): error TS2613: Module '"/app/source/utils/interface"' has no default export. Did you mean to use 'import { AuthRequest } from "/app/source/utils/interface"' instead?[39m
+[31msource/controllers/Auth.ts(16,13): error TS2322: Type '{ username: any; email: any; password: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.[39m
+[31m  Type '{ username: any; email: any; password: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.[39m
+[31m    Property 'phone' is missing in type '{ username: any; email: any; password: string; }' but required in type 'UserCreateInput'.[39m
+[31msource/controllers/Auth.ts(44,47): error TS2322: Type '{ firstname: any; lastname: any; address: any; phone: any; imageUrl: any; user: { connect: { id: any; }; }; }' is not assignable to type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31msource/controllers/Auth.ts(73,57): error TS2322: Type '{ firstname: any; lastname: any; address: any; imageUrl: any; phone: any; }' is not assignable to type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+
+[31m    at createTSError (/app/node_modules/ts-node/src/index.ts:859:12)[39m
+[31m    at reportTSError (/app/node_modules/ts-node/src/index.ts:863:19)[39m
+[31m    at getOutput (/app/node_modules/ts-node/src/index.ts:1077:36)[39m
+[31m    at Object.compile (/app/node_modules/ts-node/src/index.ts:1433:41)[39m
+[31m    at Module.m._compile (/app/node_modules/ts-node/src/index.ts:1617:30)[39m
+[31m    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (/app/node_modules/ts-node/src/index.ts:1621:12)[39m
+[31m    at Module.load (internal/modules/cjs/loader.js:950:32)[39m
+[31m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)[39m
+[31m    at Module.require (internal/modules/cjs/loader.js:974:19)[39m
+2023-01-22 23:06:53 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(5,8): error TS2613: Module '"/app/source/utils/interface"' has no default export. Did you mean to use 'import { AuthRequest } from "/app/source/utils/interface"' instead?[39m
+[31msource/controllers/Auth.ts(16,13): error TS2322: Type '{ username: any; email: any; password: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.[39m
+[31m  Type '{ username: any; email: any; password: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.[39m
+[31m    Property 'phone' is missing in type '{ username: any; email: any; password: string; }' but required in type 'UserCreateInput'.[39m
+[31msource/controllers/Auth.ts(44,47): error TS2322: Type '{ firstname: any; lastname: any; address: any; phone: any; imageUrl: any; user: { connect: { id: any; }; }; }' is not assignable to type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31msource/controllers/Auth.ts(73,57): error TS2322: Type '{ firstname: any; lastname: any; address: any; imageUrl: any; phone: any; }' is not assignable to type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(5,8): error TS2613: Module '"/app/source/utils/interface"' has no default export. Did you mean to use 'import { AuthRequest } from "/app/source/utils/interface"' instead?[39m
+[31msource/controllers/Auth.ts(16,13): error TS2322: Type '{ username: any; email: any; password: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.[39m
+[31m  Type '{ username: any; email: any; password: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.[39m
+[31m    Property 'phone' is missing in type '{ username: any; email: any; password: string; }' but required in type 'UserCreateInput'.[39m
+[31msource/controllers/Auth.ts(44,47): error TS2322: Type '{ firstname: any; lastname: any; address: any; phone: any; imageUrl: any; user: { connect: { id: any; }; }; }' is not assignable to type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31msource/controllers/Auth.ts(73,57): error TS2322: Type '{ firstname: any; lastname: any; address: any; imageUrl: any; phone: any; }' is not assignable to type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+
+[31m    at createTSError (/app/node_modules/ts-node/src/index.ts:859:12)[39m
+[31m    at reportTSError (/app/node_modules/ts-node/src/index.ts:863:19)[39m
+[31m    at getOutput (/app/node_modules/ts-node/src/index.ts:1077:36)[39m
+[31m    at Object.compile (/app/node_modules/ts-node/src/index.ts:1433:41)[39m
+[31m    at Module.m._compile (/app/node_modules/ts-node/src/index.ts:1617:30)[39m
+[31m    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (/app/node_modules/ts-node/src/index.ts:1621:12)[39m
+[31m    at Module.load (internal/modules/cjs/loader.js:950:32)[39m
+[31m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)[39m
+[31m    at Module.require (internal/modules/cjs/loader.js:974:19)[39m
+2023-01-22 23:09:28 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(5,8): error TS2613: Module '"/app/source/utils/interface"' has no default export. Did you mean to use 'import { AuthRequest } from "/app/source/utils/interface"' instead?[39m
+[31msource/controllers/Auth.ts(16,13): error TS2322: Type '{ username: any; email: any; password: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.[39m
+[31m  Type '{ username: any; email: any; password: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.[39m
+[31m    Property 'phone' is missing in type '{ username: any; email: any; password: string; }' but required in type 'UserCreateInput'.[39m
+[31msource/controllers/Auth.ts(44,47): error TS2322: Type '{ firstname: any; lastname: any; address: any; phone: any; imageUrl: any; user: { connect: { id: any; }; }; }' is not assignable to type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31msource/controllers/Auth.ts(73,57): error TS2322: Type '{ firstname: any; lastname: any; address: any; imageUrl: any; phone: any; }' is not assignable to type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(5,8): error TS2613: Module '"/app/source/utils/interface"' has no default export. Did you mean to use 'import { AuthRequest } from "/app/source/utils/interface"' instead?[39m
+[31msource/controllers/Auth.ts(16,13): error TS2322: Type '{ username: any; email: any; password: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.[39m
+[31m  Type '{ username: any; email: any; password: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.[39m
+[31m    Property 'phone' is missing in type '{ username: any; email: any; password: string; }' but required in type 'UserCreateInput'.[39m
+[31msource/controllers/Auth.ts(44,47): error TS2322: Type '{ firstname: any; lastname: any; address: any; phone: any; imageUrl: any; user: { connect: { id: any; }; }; }' is not assignable to type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31msource/controllers/Auth.ts(73,57): error TS2322: Type '{ firstname: any; lastname: any; address: any; imageUrl: any; phone: any; }' is not assignable to type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+
+[31m    at createTSError (/app/node_modules/ts-node/src/index.ts:859:12)[39m
+[31m    at reportTSError (/app/node_modules/ts-node/src/index.ts:863:19)[39m
+[31m    at getOutput (/app/node_modules/ts-node/src/index.ts:1077:36)[39m
+[31m    at Object.compile (/app/node_modules/ts-node/src/index.ts:1433:41)[39m
+[31m    at Module.m._compile (/app/node_modules/ts-node/src/index.ts:1617:30)[39m
+[31m    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (/app/node_modules/ts-node/src/index.ts:1621:12)[39m
+[31m    at Module.load (internal/modules/cjs/loader.js:950:32)[39m
+[31m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)[39m
+[31m    at Module.require (internal/modules/cjs/loader.js:974:19)[39m
+2023-01-22 23:09:28 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(5,8): error TS2613: Module '"/app/source/utils/interface"' has no default export. Did you mean to use 'import { AuthRequest } from "/app/source/utils/interface"' instead?[39m
+[31msource/controllers/Auth.ts(16,13): error TS2322: Type '{ username: any; email: any; password: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.[39m
+[31m  Type '{ username: any; email: any; password: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.[39m
+[31m    Property 'phone' is missing in type '{ username: any; email: any; password: string; }' but required in type 'UserCreateInput'.[39m
+[31msource/controllers/Auth.ts(44,47): error TS2322: Type '{ firstname: any; lastname: any; address: any; phone: any; imageUrl: any; user: { connect: { id: any; }; }; }' is not assignable to type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31msource/controllers/Auth.ts(73,57): error TS2322: Type '{ firstname: any; lastname: any; address: any; imageUrl: any; phone: any; }' is not assignable to type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(5,8): error TS2613: Module '"/app/source/utils/interface"' has no default export. Did you mean to use 'import { AuthRequest } from "/app/source/utils/interface"' instead?[39m
+[31msource/controllers/Auth.ts(16,13): error TS2322: Type '{ username: any; email: any; password: string; }' is not assignable to type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.[39m
+[31m  Type '{ username: any; email: any; password: string; }' is not assignable to type 'Without<UserUncheckedCreateInput, UserCreateInput> & UserCreateInput'.[39m
+[31m    Property 'phone' is missing in type '{ username: any; email: any; password: string; }' but required in type 'UserCreateInput'.[39m
+[31msource/controllers/Auth.ts(44,47): error TS2322: Type '{ firstname: any; lastname: any; address: any; phone: any; imageUrl: any; user: { connect: { id: any; }; }; }' is not assignable to type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileCreateInput, ProfileUncheckedCreateInput> & ProfileUncheckedCreateInput) | (Without<...> & ProfileCreateInput)'.[39m
+[31msource/controllers/Auth.ts(73,57): error TS2322: Type '{ firstname: any; lastname: any; address: any; imageUrl: any; phone: any; }' is not assignable to type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'phone' does not exist in type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+
+[31m    at createTSError (/app/node_modules/ts-node/src/index.ts:859:12)[39m
+[31m    at reportTSError (/app/node_modules/ts-node/src/index.ts:863:19)[39m
+[31m    at getOutput (/app/node_modules/ts-node/src/index.ts:1077:36)[39m
+[31m    at Object.compile (/app/node_modules/ts-node/src/index.ts:1433:41)[39m
+[31m    at Module.m._compile (/app/node_modules/ts-node/src/index.ts:1617:30)[39m
+[31m    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (/app/node_modules/ts-node/src/index.ts:1621:12)[39m
+[31m    at Module.load (internal/modules/cjs/loader.js:950:32)[39m
+[31m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)[39m
+[31m    at Module.require (internal/modules/cjs/loader.js:974:19)[39m
