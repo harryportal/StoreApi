@@ -33,7 +33,7 @@ ROADMAP:
 - [x] Set up model with Prisma
 - [x] Implement Authentication Endpoints
 - [x] Implement Product Review and Adding Endpoints
-- [ ] Add Swagger UI
+- [ ] Add Documentation with Postman
 - [x] Implement Payment Endpoints with Flutterwave Api
 - [x] Add Logging with winston
 - [x] Write Unit and Integration Test
