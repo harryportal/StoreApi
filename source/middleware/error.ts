@@ -3,8 +3,7 @@ import { NextFunction, Request, Response } from "express"
 class ApiError extends Error{
     constructor(message: string, public statusCode: number, public rawErrors?: string[]){
         super(message)
-        if(process.env.NODE_ENV == "development") Error.captureStackTrace(this, this.constructor)
-          // captures errors from every part of the application
+        Error.captureStackTrace(this, this.constructor)  // captures errors from every part of the application
     }
 }
 
@@ -14,11 +13,14 @@ class ErrorHandler{
     static handle(){
         return (err: ApiError, req: Request, res: Response, next: NextFunction)=>{
             const statusCode = err.statusCode || 500;
+            let errorStack = {};
+            if (process.env.NODE_ENV == "development"){
+                errorStack = {stack: err.stack, rawErrors: err.rawErrors ?? [] }
+            }
             res.status(statusCode).json({
                 message: err.message,
                 success: false,
-                stack: err.stack,
-                rawErrors: err.rawErrors ?? []
+                errorStack
             })
     }}
 

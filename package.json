@@ -20,7 +20,7 @@
   },
   "engines": { "node": "18.12.1" },
   "scripts": {
-    "prod": "node dist/index.js",
+    "prod": "nodemon dist/index.js",
     "postinstall": "tsc",
     "dev": "cross-env NODE_ENV=development nodemon -L source/index.ts",
     "docker:up": "docker-compose up -d",
