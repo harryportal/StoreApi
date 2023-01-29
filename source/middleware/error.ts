@@ -3,7 +3,8 @@ import { NextFunction, Request, Response } from "express"
 class ApiError extends Error{
     constructor(message: string, public statusCode: number, public rawErrors?: string[]){
         super(message)
-        Error.captureStackTrace(this, this.constructor)  // captures errors from every part of the application
+        if(process.env.NODE_ENV == "development") Error.captureStackTrace(this, this.constructor)
+          // captures errors from every part of the application
     }
 }
 
