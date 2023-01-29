@@ -15,12 +15,12 @@ class ErrorHandler{
             const statusCode = err.statusCode || 500;
             let errorStack = {};
             if (process.env.NODE_ENV == "development"){
-                errorStack = {stack: err.stack, rawErrors: err.rawErrors ?? [] }
+                errorStack = {stack: err.stack}
             }
             res.status(statusCode).json({
                 message: err.message,
                 success: false,
-                errorStack
+                errorStack, rawErrors: err.rawErrors ?? [] 
             })
     }}
 
