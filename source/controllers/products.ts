@@ -10,8 +10,7 @@ static getProducts = async(req: Request, res: Response)=>{
     const [take, skip] = current_page(req)
 
     const products = prisma.product.findMany({ 
-        skip, take,
-        orderBy: {  createdAt: 'desc'} });
+        skip, take, orderBy: {  createdAt: 'desc'} });
 
     res.json({success: true, data: products})
 }
