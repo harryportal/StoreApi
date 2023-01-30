@@ -29,3 +29,11 @@
 2023-01-29 03:25:47 [32minfo[39m: [32mListening on url http://localhost:3000[39m
 2023-01-29 03:31:57 [32minfo[39m: [32mListening on url http://localhost:3000[39m
 2023-01-29 03:33:33 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-01-29 19:40:06 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-01-29 19:46:54 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-01-30 10:25:30 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-01-30 10:30:57 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-01-30 10:37:35 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-01-30 11:07:48 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-01-30 11:09:55 [31merror[39m: [31m[ 'phone must be a valid phone number' ][39m
+2023-01-30 11:10:08 [31merror[39m: [31m[ 'phone must be a valid phone number' ][39m

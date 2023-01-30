@@ -23,7 +23,6 @@ model User {
   username String @db.VarChar(255)
   password String @db.VarChar(255)
   profile Profile?
-  phone String
   reviews Review[]  // the reviews the user has made on different product
   orders Order[] // the orders the user have made
 }
@@ -64,9 +63,9 @@ model Profile {
   id String @id @default(uuid())
   firstname String @db.VarChar(255)
   lastname String @db.VarChar(255)
+  phone String
   address String @db.VarChar(255)
   userId String @unique
-  imageUrl String?
   user User @relation(fields: [userId], references: [id])
 }
 

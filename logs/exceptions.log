@@ -118,3 +118,75 @@
 [31m    at Module.load (internal/modules/cjs/loader.js:950:32)[39m
 [31m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)[39m
 [31m    at Module.require (internal/modules/cjs/loader.js:974:19)[39m
+2023-01-30 10:34:50 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(56,54): error TS2345: Argument of type '{ where: { id: any; }; select: { id: true; username: true; phone: true; email: true; }; include: { profile: true; }; }' is not assignable to parameter of type 'SelectSubset<{ where: { id: any; }; select: { id: true; username: true; phone: true; email: true; }; include: { profile: true; }; }, UserFindUniqueArgs>'.[39m
+[31m  Type '{ where: { id: any; }; select: { id: true; username: true; phone: true; email: true; }; include: { profile: true; }; }' is not assignable to type '"Please either choose `select` or `include`."'.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(56,54): error TS2345: Argument of type '{ where: { id: any; }; select: { id: true; username: true; phone: true; email: true; }; include: { profile: true; }; }' is not assignable to parameter of type 'SelectSubset<{ where: { id: any; }; select: { id: true; username: true; phone: true; email: true; }; include: { profile: true; }; }, UserFindUniqueArgs>'.[39m
+[31m  Type '{ where: { id: any; }; select: { id: true; username: true; phone: true; email: true; }; include: { profile: true; }; }' is not assignable to type '"Please either choose `select` or `include`."'.[39m
+
+[31m    at createTSError (/app/node_modules/ts-node/src/index.ts:859:12)[39m
+[31m    at reportTSError (/app/node_modules/ts-node/src/index.ts:863:19)[39m
+[31m    at getOutput (/app/node_modules/ts-node/src/index.ts:1077:36)[39m
+[31m    at Object.compile (/app/node_modules/ts-node/src/index.ts:1433:41)[39m
+[31m    at Module.m._compile (/app/node_modules/ts-node/src/index.ts:1617:30)[39m
+[31m    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (/app/node_modules/ts-node/src/index.ts:1621:12)[39m
+[31m    at Module.load (internal/modules/cjs/loader.js:950:32)[39m
+[31m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)[39m
+[31m    at Module.require (internal/modules/cjs/loader.js:974:19)[39m
+2023-01-30 10:34:50 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(56,54): error TS2345: Argument of type '{ where: { id: any; }; select: { id: true; username: true; phone: true; email: true; }; include: { profile: true; }; }' is not assignable to parameter of type 'SelectSubset<{ where: { id: any; }; select: { id: true; username: true; phone: true; email: true; }; include: { profile: true; }; }, UserFindUniqueArgs>'.[39m
+[31m  Type '{ where: { id: any; }; select: { id: true; username: true; phone: true; email: true; }; include: { profile: true; }; }' is not assignable to type '"Please either choose `select` or `include`."'.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(56,54): error TS2345: Argument of type '{ where: { id: any; }; select: { id: true; username: true; phone: true; email: true; }; include: { profile: true; }; }' is not assignable to parameter of type 'SelectSubset<{ where: { id: any; }; select: { id: true; username: true; phone: true; email: true; }; include: { profile: true; }; }, UserFindUniqueArgs>'.[39m
+[31m  Type '{ where: { id: any; }; select: { id: true; username: true; phone: true; email: true; }; include: { profile: true; }; }' is not assignable to type '"Please either choose `select` or `include`."'.[39m
+
+[31m    at createTSError (/app/node_modules/ts-node/src/index.ts:859:12)[39m
+[31m    at reportTSError (/app/node_modules/ts-node/src/index.ts:863:19)[39m
+[31m    at getOutput (/app/node_modules/ts-node/src/index.ts:1077:36)[39m
+[31m    at Object.compile (/app/node_modules/ts-node/src/index.ts:1433:41)[39m
+[31m    at Module.m._compile (/app/node_modules/ts-node/src/index.ts:1617:30)[39m
+[31m    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (/app/node_modules/ts-node/src/index.ts:1621:12)[39m
+[31m    at Module.load (internal/modules/cjs/loader.js:950:32)[39m
+[31m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)[39m
+[31m    at Module.require (internal/modules/cjs/loader.js:974:19)[39m
+2023-01-30 10:58:31 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(70,47): error TS2322: Type '{ firstname: any; lastname: any; address: any; imageUrl: any; }' is not assignable to type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'imageUrl' does not exist in type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(70,47): error TS2322: Type '{ firstname: any; lastname: any; address: any; imageUrl: any; }' is not assignable to type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'imageUrl' does not exist in type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+
+[31m    at createTSError (/app/node_modules/ts-node/src/index.ts:859:12)[39m
+[31m    at reportTSError (/app/node_modules/ts-node/src/index.ts:863:19)[39m
+[31m    at getOutput (/app/node_modules/ts-node/src/index.ts:1077:36)[39m
+[31m    at Object.compile (/app/node_modules/ts-node/src/index.ts:1433:41)[39m
+[31m    at Module.m._compile (/app/node_modules/ts-node/src/index.ts:1617:30)[39m
+[31m    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (/app/node_modules/ts-node/src/index.ts:1621:12)[39m
+[31m    at Module.load (internal/modules/cjs/loader.js:950:32)[39m
+[31m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)[39m
+[31m    at Module.require (internal/modules/cjs/loader.js:974:19)[39m
+2023-01-30 10:58:31 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(70,47): error TS2322: Type '{ firstname: any; lastname: any; address: any; imageUrl: any; }' is not assignable to type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'imageUrl' does not exist in type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31msource/controllers/Auth.ts(70,47): error TS2322: Type '{ firstname: any; lastname: any; address: any; imageUrl: any; }' is not assignable to type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+[31m  Object literal may only specify known properties, and 'imageUrl' does not exist in type '(Without<ProfileUpdateInput, ProfileUncheckedUpdateInput> & ProfileUncheckedUpdateInput) | (Without<...> & ProfileUpdateInput)'.[39m
+
+[31m    at createTSError (/app/node_modules/ts-node/src/index.ts:859:12)[39m
+[31m    at reportTSError (/app/node_modules/ts-node/src/index.ts:863:19)[39m
+[31m    at getOutput (/app/node_modules/ts-node/src/index.ts:1077:36)[39m
+[31m    at Object.compile (/app/node_modules/ts-node/src/index.ts:1433:41)[39m
+[31m    at Module.m._compile (/app/node_modules/ts-node/src/index.ts:1617:30)[39m
+[31m    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (/app/node_modules/ts-node/src/index.ts:1621:12)[39m
+[31m    at Module.load (internal/modules/cjs/loader.js:950:32)[39m
+[31m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)[39m
+[31m    at Module.require (internal/modules/cjs/loader.js:974:19)[39m
