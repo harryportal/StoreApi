@@ -7,7 +7,7 @@ import {AuthRequest} from '../utils/interface';
 
 export default class AuthController{
     static signUp = async (req: Request, res: Response)=>{
-        const {username, email} = req.body
+        let {username, email} = req.body
         let user = await prisma.user.findUnique({
             where: { email: req.body.email }
         });
@@ -17,8 +17,9 @@ export default class AuthController{
                 username, email, password: await hashPassword(req.body.password)
             }
         })
+        const User = {username:user.username, email:user.email, id:user.id}
         const token = createJWT(user);
-        res.json({token, user});
+        res.json({User, token});
         };
     
 
