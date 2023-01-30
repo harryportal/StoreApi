@@ -18,7 +18,7 @@ export default class AuthController{
             }
         })
         const token = createJWT(user);
-        res.json({token});
+        res.json({token, user});
         };
     
 
