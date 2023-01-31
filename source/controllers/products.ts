@@ -7,10 +7,10 @@ import {AuthRequest} from '../utils/interface';
 export class Product {
 // returns all products ordered by their date of creation and implement pagination
 static getProducts = async(req: Request, res: Response)=>{
-    const [take, skip] = current_page(req)
+    //const [take, skip] = current_page(req)
 
     const products = prisma.product.findMany({ 
-        skip, take, orderBy: {  createdAt: 'desc'} });
+        orderBy: {  createdAt: 'desc'} });
 
     res.json({success: true, data: products})
 }
