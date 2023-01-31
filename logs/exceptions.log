@@ -190,3 +190,47 @@
 [31m    at Module.load (internal/modules/cjs/loader.js:950:32)[39m
 [31m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)[39m
 [31m    at Module.require (internal/modules/cjs/loader.js:974:19)[39m
+2023-01-31 20:49:36 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mThe table `public.product` does not exist in the current database.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mThe table `public.product` does not exist in the current database.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35024:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at RequestHandler.request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34991:12)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-01-31 20:49:36 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mThe table `public.product` does not exist in the current database.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mThe table `public.product` does not exist in the current database.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35024:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at RequestHandler.request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34991:12)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m

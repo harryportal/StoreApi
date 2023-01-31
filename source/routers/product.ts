@@ -8,6 +8,7 @@ const productRouter = Router();
 
 productRouter.get('/', Product.getProducts)
 productRouter.get('/:id', Product.getProduct )
+productRouter.get('/categories', Product.getCategories )
 productRouter.get('/categories/:id', Product.getProductsByCategory )
 productRouter.post('/:id/ratings', protect, Product.addReview)
 

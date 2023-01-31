@@ -8,9 +8,7 @@ export class Product {
 // returns all products ordered by their date of creation and implement pagination
 static getProducts = async(req: Request, res: Response)=>{
     //const [take, skip] = current_page(req)
-
-    const products = prisma.product.findMany({ 
-        orderBy: {  createdAt: 'desc'} });
+    const products = prisma.product.findMany();
 
     res.json({success: true, data: products})
 }
@@ -36,6 +34,12 @@ static getProductsByCategory =  async(req: Request, res: Response)=>{
          })
 
     res.json({success:true, data:products})
+}
+
+static getCategories =async(req: Request, res: Response) => {
+    const categories = await prisma.category.findMany();
+    res.json({success:true, data:categories})
+    
 }
 
 // add ratings for a particular product
