@@ -38,7 +38,7 @@ model Product {
   reviews Review[] 
   categoryId String
   orderDetails OrderDetails[]
-  category category @relation(fields: [categoryId], references: [id])
+  category Category @relation(fields: [categoryId], references: [id])
 }
 
 model Review {
@@ -52,7 +52,7 @@ model Review {
   @@id([userId, productId])
 }
 
-model category { 
+model Category { 
   id String @id @default(uuid()) 
   imageUrl String?
   products Product[]

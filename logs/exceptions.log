@@ -234,3 +234,211 @@
 [31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
 [31m    at RequestHandler.request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34991:12)[39m
 [31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-02-01 07:11:12 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mDatabase `ddl8qrsfbjedt` does not exist on the database server at `ec2-52-21-136-176.compute-1.amazonaws.com:5432`.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mDatabase `ddl8qrsfbjedt` does not exist on the database server at `ec2-52-21-136-176.compute-1.amazonaws.com:5432`.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35038:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35542:25[39m
+[31m    at async PrismaClient._executeRequest (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36111:22)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-02-01 07:11:12 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mDatabase `ddl8qrsfbjedt` does not exist on the database server at `ec2-52-21-136-176.compute-1.amazonaws.com:5432`.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mDatabase `ddl8qrsfbjedt` does not exist on the database server at `ec2-52-21-136-176.compute-1.amazonaws.com:5432`.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35038:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35542:25[39m
+[31m    at async PrismaClient._executeRequest (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36111:22)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-02-01 07:14:55 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mCan't reach database server at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`[39m
+
+[31mPlease make sure your database server is running at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mCan't reach database server at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`[39m
+
+[31mPlease make sure your database server is running at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35038:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35542:25[39m
+[31m    at async PrismaClient._executeRequest (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36111:22)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-02-01 07:14:55 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mCan't reach database server at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`[39m
+
+[31mPlease make sure your database server is running at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mCan't reach database server at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`[39m
+
+[31mPlease make sure your database server is running at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35038:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35542:25[39m
+[31m    at async PrismaClient._executeRequest (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36111:22)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-02-01 07:19:48 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mCan't reach database server at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`[39m
+
+[31mPlease make sure your database server is running at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mCan't reach database server at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`[39m
+
+[31mPlease make sure your database server is running at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35038:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35542:25[39m
+[31m    at async PrismaClient._executeRequest (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36111:22)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-02-01 07:19:48 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mCan't reach database server at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`[39m
+
+[31mPlease make sure your database server is running at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mCan't reach database server at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`[39m
+
+[31mPlease make sure your database server is running at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35038:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35542:25[39m
+[31m    at async PrismaClient._executeRequest (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36111:22)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-02-01 07:21:08 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mCan't reach database server at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`[39m
+
+[31mPlease make sure your database server is running at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mCan't reach database server at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`[39m
+
+[31mPlease make sure your database server is running at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35038:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35542:25[39m
+[31m    at async PrismaClient._executeRequest (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36111:22)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-02-01 07:21:08 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mCan't reach database server at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`[39m
+
+[31mPlease make sure your database server is running at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:20:42[39m
+
+[31m  17 static getProduct =  async(req: Request, res: Response)=>{[39m
+[31m  18     const id = req.params.id[39m
+[31m  19  [39m
+[31m→ 20     const product = await prisma.product.findUnique([39m
+[31mCan't reach database server at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`[39m
+
+[31mPlease make sure your database server is running at `ec2-52-21-136-176.compute-1.amazonaws.com`:`5432`.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35038:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35542:25[39m
+[31m    at async PrismaClient._executeRequest (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36111:22)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m

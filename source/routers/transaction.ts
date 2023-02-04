@@ -1,11 +1,10 @@
-import { Router } from "express";
-import { protect } from "../middleware/auth";
-import OrderController from "../controllers/transaction";
-
+import { Router } from 'express';
+import { protect } from '../middleware/auth';
+import OrderController from '../controllers/transaction';
 
 const transactionRouter = Router();
 
-transactionRouter.post('/create-order', protect, OrderController.createOrder)
-transactionRouter.post('/verify-payment', OrderController.flutterwaveWebhook)
+transactionRouter.post('/create-order', protect, OrderController.createOrder);
+transactionRouter.post('/verify-payment', OrderController.flutterwaveWebhook);
 
-export default transactionRouter
+export default transactionRouter;
