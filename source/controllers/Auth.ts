@@ -1,13 +1,15 @@
-import prisma from '../utils/db';
+import {prisma} from '../utils/db';
 import { Request, Response } from 'express';
 import { comparePassword, createJWT, hashPassword } from '../utils/auth';
 import { BadRequestError } from '../middleware/error';
 import { AuthRequest } from '../utils/interface';
 
+
+
 export default class AuthController {
   static signUp = async (req: Request, res: Response) => {
-    let { username, email } = req.body;
-    let user = await prisma.user.findUnique({
+    let { username, email, password } = req.body;
+    let user = await prisma.user.findUnique({  // check if user with email already exist
       where: { email: req.body.email },
     });
     if (user) {
@@ -17,7 +19,7 @@ export default class AuthController {
       data: {
         username,
         email,
-        password: await hashPassword(req.body.password),
+        password: await hashPassword(password),
       },
     });
     const User = { username: user.username, email: user.email, id: user.id };
@@ -26,9 +28,12 @@ export default class AuthController {
   };
 
   static signIn = async (req: Request, res: Response) => {
-    const user = await prisma.user.findUniqueOrThrow({
+
+    const user = await prisma.user.findUnique({  // check if user exist
       where: { email: req.body.email },
     });
+
+    if(!user) throw new BadRequestError("User Does not Exist!")
 
     const isValid = await comparePassword(req.body.password, user.password);
 

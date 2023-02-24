@@ -23,6 +23,7 @@
   },
   "scripts": {
     "prod": "nodemon dist/index.js",
+    "start": "cross-env NODE_ENV=development nodemon source/index.ts",
     "postinstall": "tsc",
     "dev": "cross-env NODE_ENV=development nodemon -L source/index.ts",
     "docker:up": "docker-compose up -d",
@@ -41,6 +42,9 @@
   "dependencies": {
     "@prisma/client": "^4.8.1",
     "@types/bcryptjs": "^2.4.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/qs": "^6.9.7",
     "@types/winston": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
@@ -48,6 +52,7 @@
     "bcryptjs": "^2.4.3",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
@@ -60,13 +65,15 @@
     "nodemon": "^2.0.20",
     "passport": "^0.6.0",
     "prettier": "^2.8.3",
+    "qs": "^6.11.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^4.6.0",
-    "winston": "^3.8.2"
+    "winston": "^3.8.2",
+    "zod": "^3.20.6"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"
     }
-}
+  }
 }

@@ -67,3 +67,17 @@
 2023-02-01 07:20:12 [32minfo[39m: [32mListening on url http://localhost:3000[39m
 2023-02-01 07:20:58 [32minfo[39m: [32mListening on url http://localhost:3000[39m
 2023-02-01 07:21:27 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-02-24 22:00:29 [32minfo[39m: [32mListening on url http://localhost:8080[39m
+2023-02-24 22:00:32 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-02-24 23:31:26 [32minfo[39m: [32mListening on url http://localhost:8080[39m
+2023-02-24 23:31:29 [31merror[39m: [31mError Connecting to Database Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2023-02-24 23:32:29 [32minfo[39m: [32mListening on url http://localhost:8080[39m
+2023-02-24 23:32:29 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-02-24 23:33:31 [32minfo[39m: [32mListening on url http://localhost:8080[39m
+2023-02-24 23:33:35 [31merror[39m: [31mError Connecting to Database Can't reach database server at `localhost`:`5432`[39m
+
+[31mPlease make sure your database server is running at `localhost`:`5432`.[39m
+2023-02-24 23:34:15 [32minfo[39m: [32mListening on url http://localhost:8080[39m
+2023-02-24 23:34:15 [32minfo[39m: [32mConnected to Database Successsfully[39m

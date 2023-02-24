@@ -1,5 +1,5 @@
 import { Response, Request } from 'express';
-import prisma from '../utils/db';
+import {prisma} from '../utils/db';
 import { AuthRequest, FlutterwaveWebhookData, OrderDetails } from '../utils/interface';
 import { FlutterWaveService } from '../service/flutterwave';
 import { BadRequestError } from '../middleware/error';

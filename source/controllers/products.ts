@@ -1,8 +1,7 @@
 import { Response, Request } from 'express';
-import prisma from '../utils/db';
+import {prisma} from '../utils/db';
 import { current_page } from '../utils/page';
 import { AuthRequest } from '../utils/interface';
-
 export class Product {
   // returns all products ordered by their date of creation and implement pagination
   static getProducts = async (req: Request, res: Response) => {
