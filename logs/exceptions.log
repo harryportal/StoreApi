@@ -602,3 +602,67 @@
 [31m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
 [31m    at Function.Module._load (node:internal/modules/cjs/loader:878:12)[39m
 [31m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+2023-02-25 15:44:53 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31m[96msource/service/googleOauth.ts[0m:[93m25[0m:[93m95[0m - [91merror[0m[90m TS2551: [0mProperty 'redirect_uri' does not exist on type 'GoogleService'. Did you mean 'redirect_url'?[39m
+
+[31m[7m25[0m     const authUrl = `${baseUrl}?response_type=code&client_id=${client_id}&redirect_uri=${this.redirect_uri}&scope=${scopes}`[39m
+[31m[7m  [0m [91m                                                                                              ~~~~~~~~~~~~[0m[39m
+
+[31m  [96msource/service/googleOauth.ts[0m:[93m10[0m:[93m12[0m[39m
+[31m    [7m10[0m     public redirect_url: string[39m
+[31m    [7m  [0m [96m           ~~~~~~~~~~~~[0m[39m
+[31m    'redirect_url' is declared here.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31m[96msource/service/googleOauth.ts[0m:[93m25[0m:[93m95[0m - [91merror[0m[90m TS2551: [0mProperty 'redirect_uri' does not exist on type 'GoogleService'. Did you mean 'redirect_url'?[39m
+
+[31m[7m25[0m     const authUrl = `${baseUrl}?response_type=code&client_id=${client_id}&redirect_uri=${this.redirect_uri}&scope=${scopes}`[39m
+[31m[7m  [0m [91m                                                                                              ~~~~~~~~~~~~[0m[39m
+
+[31m  [96msource/service/googleOauth.ts[0m:[93m10[0m:[93m12[0m[39m
+[31m    [7m10[0m     public redirect_url: string[39m
+[31m    [7m  [0m [96m           ~~~~~~~~~~~~[0m[39m
+[31m    'redirect_url' is declared here.[39m
+
+[31m    at createTSError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:859:12)[39m
+[31m    at reportTSError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:863:19)[39m
+[31m    at getOutput (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1077:36)[39m
+[31m    at Object.compile (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1433:41)[39m
+[31m    at Module.m._compile (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1617:30)[39m
+[31m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1621:12)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[31m    at Function.Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+2023-02-25 15:44:53 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31m[96msource/service/googleOauth.ts[0m:[93m25[0m:[93m95[0m - [91merror[0m[90m TS2551: [0mProperty 'redirect_uri' does not exist on type 'GoogleService'. Did you mean 'redirect_url'?[39m
+
+[31m[7m25[0m     const authUrl = `${baseUrl}?response_type=code&client_id=${client_id}&redirect_uri=${this.redirect_uri}&scope=${scopes}`[39m
+[31m[7m  [0m [91m                                                                                              ~~~~~~~~~~~~[0m[39m
+
+[31m  [96msource/service/googleOauth.ts[0m:[93m10[0m:[93m12[0m[39m
+[31m    [7m10[0m     public redirect_url: string[39m
+[31m    [7m  [0m [96m           ~~~~~~~~~~~~[0m[39m
+[31m    'redirect_url' is declared here.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31m[96msource/service/googleOauth.ts[0m:[93m25[0m:[93m95[0m - [91merror[0m[90m TS2551: [0mProperty 'redirect_uri' does not exist on type 'GoogleService'. Did you mean 'redirect_url'?[39m
+
+[31m[7m25[0m     const authUrl = `${baseUrl}?response_type=code&client_id=${client_id}&redirect_uri=${this.redirect_uri}&scope=${scopes}`[39m
+[31m[7m  [0m [91m                                                                                              ~~~~~~~~~~~~[0m[39m
+
+[31m  [96msource/service/googleOauth.ts[0m:[93m10[0m:[93m12[0m[39m
+[31m    [7m10[0m     public redirect_url: string[39m
+[31m    [7m  [0m [96m           ~~~~~~~~~~~~[0m[39m
+[31m    'redirect_url' is declared here.[39m
+
+[31m    at createTSError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:859:12)[39m
+[31m    at reportTSError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:863:19)[39m
+[31m    at getOutput (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1077:36)[39m
+[31m    at Object.compile (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1433:41)[39m
+[31m    at Module.m._compile (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1617:30)[39m
+[31m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1621:12)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[31m    at Function.Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m

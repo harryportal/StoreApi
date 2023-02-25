@@ -8,12 +8,11 @@ const googleService = new GoogleService();
 
 export default class GoogleOauthController {
     static getAuthorizationCode = async (req: Request, res: Response)=>{
-        const client_id = process.env.GOOGLE_OAUTH_CLIENT_ID
-        const redirect_uri  = process.env.GOOGLE_OAUTH_REDIRECT
-        const baseUrl = "https://accounts.google.com/o/oauth2/auth"
-        const scopes = "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email"
-        const authUrl = `${baseUrl}?response_type=code&client_id=${client_id}&redirect_uri=${redirect_uri}&scope=${scopes}`
-        res.redirect(authUrl)  // change to res.json(redirect:url)
+      const authUrl = googleService.getAuthCode();
+
+      res.status(200).json({
+        redirect_link: authUrl, success: true
+      })
     }
 
     static googleOauthHandler = async (req: Request, res: Response) => {
@@ -32,11 +31,12 @@ export default class GoogleOauthController {
       
           const { id_token, access_token } = await googleService.getToken({code});
       
-          const { name, verified_email, email, family_name } = await googleService.getUser({
+          const { name, verified_email, email}  = await googleService.getUser({
             id_token,
             access_token,
           });
-      
+        
+
           if (!verified_email) {
             return res.status(403).json({
               status: "fail",
@@ -49,7 +49,7 @@ export default class GoogleOauthController {
             create: {
               username:name,
               email,
-              password: "",
+              password: ""
             },
             update: {username:name, email},
           });
@@ -57,7 +57,7 @@ export default class GoogleOauthController {
           if (!user) return res.redirect(`${FRONTEND_ORIGIN}/oauth/error`);
       
           const token = createJWT(user)
-          res.redirect(`${FRONTEND_ORIGIN}${pathUrl}/${token}`); // come back to this
+          res.redirect(`${FRONTEND_ORIGIN}/${token}`); // come back to this
 
         } catch (err: any) {
           console.log("Failed to authorize Google User", err);
