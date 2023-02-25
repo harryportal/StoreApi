@@ -29,7 +29,7 @@
     "docker:up": "docker-compose up -d",
     "docker:logs": "docker-compose logs -f backend",
     "docker:down": "docker-compose down",
-    "dev:migrate": "dotenv -e .env.development -- npx prisma migrate dev --name init",
+    "db:migrate": "dotenv -e .env.development -- npx prisma migrate dev --name init",
     "test:migrate": "dotenv -e .env.test -- npx prisma migrate dev --name init",
     "migrate": "docker-compose exec backend npm run dev:migrate",
     "migrate:test": "docker-compose exec backend npm run test:migrate",

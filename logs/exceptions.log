@@ -442,3 +442,163 @@
 [31m    at C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35542:25[39m
 [31m    at async PrismaClient._executeRequest (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36111:22)[39m
 [31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-02-25 01:56:41 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31m[96msource/controllers/Oauth.ts[0m:[93m24[0m:[93m75[0m - [91merror[0m[90m TS2345: [0mArgument of type '{}' is not assignable to parameter of type '{ code: string; }'.[39m
+[31m  Property 'code' is missing in type '{}' but required in type '{ code: string; }'.[39m
+
+[31m[7m24[0m           const { id_token, access_token } = await googleService.getToken({});[39m
+[31m[7m  [0m [91m                                                                          ~~[0m[39m
+
+[31m  [96msource/service/googleOauth.ts[0m:[93m15[0m:[93m9[0m[39m
+[31m    [7m15[0m         code: string;[39m
+[31m    [7m  [0m [96m        ~~~~[0m[39m
+[31m    'code' is declared here.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31m[96msource/controllers/Oauth.ts[0m:[93m24[0m:[93m75[0m - [91merror[0m[90m TS2345: [0mArgument of type '{}' is not assignable to parameter of type '{ code: string; }'.[39m
+[31m  Property 'code' is missing in type '{}' but required in type '{ code: string; }'.[39m
+
+[31m[7m24[0m           const { id_token, access_token } = await googleService.getToken({});[39m
+[31m[7m  [0m [91m                                                                          ~~[0m[39m
+
+[31m  [96msource/service/googleOauth.ts[0m:[93m15[0m:[93m9[0m[39m
+[31m    [7m15[0m         code: string;[39m
+[31m    [7m  [0m [96m        ~~~~[0m[39m
+[31m    'code' is declared here.[39m
+
+[31m    at createTSError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:859:12)[39m
+[31m    at reportTSError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:863:19)[39m
+[31m    at getOutput (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1077:36)[39m
+[31m    at Object.compile (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1433:41)[39m
+[31m    at Module.m._compile (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1617:30)[39m
+[31m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1621:12)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[31m    at Function.Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+2023-02-25 01:56:41 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31m[96msource/controllers/Oauth.ts[0m:[93m24[0m:[93m75[0m - [91merror[0m[90m TS2345: [0mArgument of type '{}' is not assignable to parameter of type '{ code: string; }'.[39m
+[31m  Property 'code' is missing in type '{}' but required in type '{ code: string; }'.[39m
+
+[31m[7m24[0m           const { id_token, access_token } = await googleService.getToken({});[39m
+[31m[7m  [0m [91m                                                                          ~~[0m[39m
+
+[31m  [96msource/service/googleOauth.ts[0m:[93m15[0m:[93m9[0m[39m
+[31m    [7m15[0m         code: string;[39m
+[31m    [7m  [0m [96m        ~~~~[0m[39m
+[31m    'code' is declared here.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31m[96msource/controllers/Oauth.ts[0m:[93m24[0m:[93m75[0m - [91merror[0m[90m TS2345: [0mArgument of type '{}' is not assignable to parameter of type '{ code: string; }'.[39m
+[31m  Property 'code' is missing in type '{}' but required in type '{ code: string; }'.[39m
+
+[31m[7m24[0m           const { id_token, access_token } = await googleService.getToken({});[39m
+[31m[7m  [0m [91m                                                                          ~~[0m[39m
+
+[31m  [96msource/service/googleOauth.ts[0m:[93m15[0m:[93m9[0m[39m
+[31m    [7m15[0m         code: string;[39m
+[31m    [7m  [0m [96m        ~~~~[0m[39m
+[31m    'code' is declared here.[39m
+
+[31m    at createTSError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:859:12)[39m
+[31m    at reportTSError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:863:19)[39m
+[31m    at getOutput (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1077:36)[39m
+[31m    at Object.compile (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1433:41)[39m
+[31m    at Module.m._compile (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1617:30)[39m
+[31m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1621:12)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[31m    at Function.Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+2023-02-25 02:26:52 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31m[96msource/controllers/Oauth.ts[0m:[93m24[0m:[93m66[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 0.[39m
+
+[31m[7m24[0m           const { id_token, access_token } = await googleService.getToken();[39m
+[31m[7m  [0m [91m                                                                 ~~~~~~~~~~[0m[39m
+
+[31m  [96msource/service/googleOauth.ts[0m:[93m12[0m:[93m23[0m[39m
+[31m    [7m 12[0m     getToken = async ({  // get Authorization Token[39m
+[31m    [7m   [0m [96m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m
+[31m    [7m 13[0m         code,[39m
+[31m    [7m   [0m [96m~~~~~~~~~~~~~[0m[39m
+[31m    [7m...[0m [39m
+[31m    [7m 15[0m         code: string;[39m
+[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~[0m[39m
+[31m    [7m 16[0m       }): Promise<GoogleOauthToken> => {[39m
+[31m    [7m   [0m [96m~~~~~~~[0m[39m
+[31m    An argument matching this binding pattern was not provided.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31m[96msource/controllers/Oauth.ts[0m:[93m24[0m:[93m66[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 0.[39m
+
+[31m[7m24[0m           const { id_token, access_token } = await googleService.getToken();[39m
+[31m[7m  [0m [91m                                                                 ~~~~~~~~~~[0m[39m
+
+[31m  [96msource/service/googleOauth.ts[0m:[93m12[0m:[93m23[0m[39m
+[31m    [7m 12[0m     getToken = async ({  // get Authorization Token[39m
+[31m    [7m   [0m [96m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m
+[31m    [7m 13[0m         code,[39m
+[31m    [7m   [0m [96m~~~~~~~~~~~~~[0m[39m
+[31m    [7m...[0m [39m
+[31m    [7m 15[0m         code: string;[39m
+[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~[0m[39m
+[31m    [7m 16[0m       }): Promise<GoogleOauthToken> => {[39m
+[31m    [7m   [0m [96m~~~~~~~[0m[39m
+[31m    An argument matching this binding pattern was not provided.[39m
+
+[31m    at createTSError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:859:12)[39m
+[31m    at reportTSError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:863:19)[39m
+[31m    at getOutput (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1077:36)[39m
+[31m    at Object.compile (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1433:41)[39m
+[31m    at Module.m._compile (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1617:30)[39m
+[31m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1621:12)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[31m    at Function.Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+2023-02-25 02:26:52 [31merror[39m: [31muncaughtException: ⨯ Unable to compile TypeScript:[39m
+[31m[96msource/controllers/Oauth.ts[0m:[93m24[0m:[93m66[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 0.[39m
+
+[31m[7m24[0m           const { id_token, access_token } = await googleService.getToken();[39m
+[31m[7m  [0m [91m                                                                 ~~~~~~~~~~[0m[39m
+
+[31m  [96msource/service/googleOauth.ts[0m:[93m12[0m:[93m23[0m[39m
+[31m    [7m 12[0m     getToken = async ({  // get Authorization Token[39m
+[31m    [7m   [0m [96m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m
+[31m    [7m 13[0m         code,[39m
+[31m    [7m   [0m [96m~~~~~~~~~~~~~[0m[39m
+[31m    [7m...[0m [39m
+[31m    [7m 15[0m         code: string;[39m
+[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~[0m[39m
+[31m    [7m 16[0m       }): Promise<GoogleOauthToken> => {[39m
+[31m    [7m   [0m [96m~~~~~~~[0m[39m
+[31m    An argument matching this binding pattern was not provided.[39m
+
+[31mTSError: ⨯ Unable to compile TypeScript:[39m
+[31m[96msource/controllers/Oauth.ts[0m:[93m24[0m:[93m66[0m - [91merror[0m[90m TS2554: [0mExpected 1 arguments, but got 0.[39m
+
+[31m[7m24[0m           const { id_token, access_token } = await googleService.getToken();[39m
+[31m[7m  [0m [91m                                                                 ~~~~~~~~~~[0m[39m
+
+[31m  [96msource/service/googleOauth.ts[0m:[93m12[0m:[93m23[0m[39m
+[31m    [7m 12[0m     getToken = async ({  // get Authorization Token[39m
+[31m    [7m   [0m [96m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m
+[31m    [7m 13[0m         code,[39m
+[31m    [7m   [0m [96m~~~~~~~~~~~~~[0m[39m
+[31m    [7m...[0m [39m
+[31m    [7m 15[0m         code: string;[39m
+[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~[0m[39m
+[31m    [7m 16[0m       }): Promise<GoogleOauthToken> => {[39m
+[31m    [7m   [0m [96m~~~~~~~[0m[39m
+[31m    An argument matching this binding pattern was not provided.[39m
+
+[31m    at createTSError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:859:12)[39m
+[31m    at reportTSError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:863:19)[39m
+[31m    at getOutput (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1077:36)[39m
+[31m    at Object.compile (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1433:41)[39m
+[31m    at Module.m._compile (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1617:30)[39m
+[31m    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)[39m
+[31m    at Object.require.extensions.<computed> [as .ts] (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\ts-node\src\index.ts:1621:12)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
+[31m    at Function.Module._load (node:internal/modules/cjs/loader:878:12)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
