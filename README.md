@@ -14,7 +14,7 @@ Create a .env.test and .env.development and populate using the .env.sample file.
 ***
 Start the application and run migration:
 ```sh
-> npm run docker:up
+> npm run start
 > npm run migrate
 ```
 
