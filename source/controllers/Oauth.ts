@@ -13,7 +13,7 @@ export default class GoogleOauthController {
         const baseUrl = "https://accounts.google.com/o/oauth2/auth"
         const scopes = "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email"
         const authUrl = `${baseUrl}?response_type=code&client_id=${client_id}&redirect_uri=${redirect_uri}&scope=${scopes}`
-        res.redirect(authUrl)
+        res.redirect(authUrl)  // change to res.json(redirect:url)
     }
 
     static googleOauthHandler = async (req: Request, res: Response) => {
@@ -25,8 +25,8 @@ export default class GoogleOauthController {
       
           if (!code) {
             return res.status(401).json({
-              status: "fail",
-              message: "Authorization code not provided!",
+              status: "fail",  
+              message: "Authorization code not provided!",  
             });
           }
       
@@ -57,7 +57,7 @@ export default class GoogleOauthController {
           if (!user) return res.redirect(`${FRONTEND_ORIGIN}/oauth/error`);
       
           const token = createJWT(user)
-          res.redirect(`${FRONTEND_ORIGIN}${pathUrl}/${token}`);
+          res.redirect(`${FRONTEND_ORIGIN}${pathUrl}/${token}`); // come back to this
 
         } catch (err: any) {
           console.log("Failed to authorize Google User", err);

@@ -23,6 +23,7 @@ export default class GoogleService{
           redirect_uri: process.env.GOOGLE_OAUTH_REDIRECT,
           grant_type: "authorization_code",
         };
+
         try {
           const { data } = await axios.post<GoogleOauthToken>(
             rootURl,
@@ -40,6 +41,7 @@ export default class GoogleService{
           throw new Error(err);
         }
       };
+      
       getUser = async ({
         id_token,
         access_token,

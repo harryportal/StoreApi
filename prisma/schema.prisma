@@ -34,11 +34,19 @@ model Product {
   updatedAt DateTime @updatedAt
   description String 
   price Decimal
-  imageUrl String?  
+  imageUrl String?
+  images ProductImage[]
   reviews Review[] 
   categoryId String
   orderDetails OrderDetails[]
   category Category @relation(fields: [categoryId], references: [id])
+}
+
+model ProductImage {
+  id String @id @default(uuid())
+  imageUrl String
+  productId String
+  product Product @relation(fields: [productId], references: [id])
 }
 
 model Review {
