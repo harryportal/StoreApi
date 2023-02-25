@@ -33,9 +33,11 @@ ROADMAP:
 - [x] Set up model with Prisma
 - [x] Implement Authentication Endpoints
 - [x] Implement Product Review and Adding Endpoints
-- [ ] Add Documentation with Postman
+- [x] Add Documentation with Postman
 - [x] Implement Payment Endpoints with Flutterwave Api
 - [x] Add Logging with winston
 - [x] Write Unit and Integration Test
-- [ ] Deploy to Heroku:rocket: 
+- [x] Implement Sign in with Google
+- [ ] Seed the database with bdummy Data: 
+- [x] Deploy to Heroku:rocket: 
 
