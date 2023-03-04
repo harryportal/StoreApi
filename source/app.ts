@@ -6,6 +6,7 @@ import { Application } from 'express';
 import productRouter from './routers/product';
 import authRouter from './routers/Auth';
 import transactionRouter from './routers/transaction';
+import categoriesRouter from './routers/Categories';
 
 const app: Application = express();
 
@@ -16,7 +17,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/products', productRouter);
+app.use('/api/v1/categories', categoriesRouter);
 app.use('/api/v1/transaction', transactionRouter);
+
 
 app.use('*', ErrorHandler.pagenotFound());
 app.use(ErrorHandler.handle());

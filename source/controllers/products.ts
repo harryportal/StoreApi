@@ -2,12 +2,17 @@ import { Response, Request } from 'express';
 import {prisma} from '../utils/db';
 import { current_page } from '../utils/page';
 import { AuthRequest } from '../utils/interface';
+
 export class Product {
   // returns all products ordered by their date of creation and implement pagination
+
   static getProducts = async (req: Request, res: Response) => {
     //const [take, skip] = current_page(req)
-    const products = prisma.product.findMany();
-
+    const products = await prisma.product.findMany({
+      include:{
+        category: true
+      }
+    });
     res.json({ success: true, data: products });
   };
 
@@ -17,7 +22,7 @@ export class Product {
 
     const product = await prisma.product.findUnique({
       where: { id },
-      include: { reviews: true },
+      include: { reviews: true, images:true },
     }); // see how i can return only the first 5 ratings
 
     res.json({ success: true, data: product });
@@ -38,8 +43,10 @@ export class Product {
   };
 
   static getCategories = async (req: Request, res: Response) => {
-    const categories = await prisma.$executeRaw`SELECT * FROM "Category"`;
+
+    const categories = await prisma.category.findMany({});
     res.json({ success: true, data: categories });
+
   };
 
   // add ratings for a particular product

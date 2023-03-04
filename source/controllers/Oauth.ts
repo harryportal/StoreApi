@@ -49,7 +49,8 @@ export default class GoogleOauthController {
             create: {
               username:name,
               email,
-              password: ""
+              password: "",
+
             },
             update: {username:name, email},
           });

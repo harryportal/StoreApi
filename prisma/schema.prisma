@@ -2,7 +2,7 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
   binaryTargets = ["native", "windows"]
 }
 
@@ -18,72 +18,73 @@ datasource db {
 // Product Rating  -- {content: string, rate: int, productId: int} 
 
 model User {
-  id String @id @default(uuid())
-  email String @unique @db.VarChar(255)
-  username String @db.VarChar(255)
-  password String @db.VarChar(255)
-  profile Profile?
-  reviews Review[]  // the reviews the user has made on different product
-  orders Order[] // the orders the user have made
+  id       String   @id @default(uuid())
+  email    String   @unique @db.VarChar(255)
+  username String   @db.VarChar(255)
+  password String   @db.VarChar(255)
+  profile  Profile?
+  reviews  Review[] // the reviews the user has made on different product
+  orders   Order[] // the orders the user have made
 }
 
 model Product {
-  id String @id @default(uuid())
-  name String @unique @db.VarChar(255)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  description String 
-  price Decimal
-  imageUrl String?
-  images ProductImage[]
-  reviews Review[] 
-  categoryId String
+  id           String         @id @default(uuid())
+  name         String         @unique @db.VarChar(255)
+  createdAt    DateTime       @default(now())
+  description  String
+  price        Decimal
+  imageUrl     String?
+  images       ProductImage[]
+  reviews      Review[]
+  categoryId   String
   orderDetails OrderDetails[]
-  category Category @relation(fields: [categoryId], references: [id])
+  category     Category       @relation(fields: [categoryId], references: [id])
 }
 
 model ProductImage {
-  id String @id @default(uuid())
-  imageUrl String
+  id        String  @id @default(uuid())
+  imageUrl  String
   productId String
-  product Product @relation(fields: [productId], references: [id])
+  product   Product @relation(fields: [productId], references: [id])
 }
 
 model Review {
-  content String 
-  userId String
+  content   String
+  userId    String
   productId String
-  rating Int @default(0)
+  rating    Int      @default(0)
   createdAt DateTime @default(now())
-  user User @relation(fields: [userId],references: [id])
-  product Product @relation(fields: [productId], references: [id])
+  user      User     @relation(fields: [userId], references: [id])
+  product   Product  @relation(fields: [productId], references: [id])
+
   @@id([userId, productId])
 }
 
-model Category { 
-  id String @id @default(uuid()) 
+model Category {
+  id       String    @id @default(uuid())
   imageUrl String?
   products Product[]
-  name String @db.VarChar(255)
+  name     String    @unique  @db.VarChar(255)
 }
 
 model Profile {
-  id String @id @default(uuid())
+  id        String @id @default(uuid())
   firstname String @db.VarChar(255)
-  lastname String @db.VarChar(255)
-  phone String
-  address String @db.VarChar(255)
-  userId String @unique
-  user User @relation(fields: [userId], references: [id])
+  lastname  String @db.VarChar(255)
+  phone     String
+  address   String @db.VarChar(255)
+  userId    String @unique
+  user      User   @relation(fields: [userId], references: [id])
 }
 
-model OrderDetails{    
+model OrderDetails {
   productId String
-  orderId String
-  product Product @relation(fields: [productId], references: [id]) 
-  order Order @relation(fields: [orderId], references: [id]) 
-  quantity Int 
-  price Decimal
+  orderId   String
+  product   Product @relation(fields: [productId], references: [id])
+  order     Order   @relation(fields: [orderId], references: [id])
+  quantity  Int
+  price     Decimal
+
   @@id([productId, orderId])
 }
 
@@ -94,13 +95,13 @@ enum Status {
 }
 
 model Order {
-  id String @id @default(uuid()) 
-  status Status @default(PENDING)
-  createdAt DateTime @default(now())
-  paidAt DateTime?
+  id               String         @id @default(uuid())
+  status           Status         @default(PENDING)
+  createdAt        DateTime       @default(now())
+  paidAt           DateTime?
   paymentReference String?
-  totalPrice Decimal?
-  userId String 
-  user User @relation(fields: [userId], references: [id])
-  orderDetails OrderDetails[]
+  totalPrice       Decimal?
+  userId           String
+  user             User           @relation(fields: [userId], references: [id])
+  orderDetails     OrderDetails[]
 }

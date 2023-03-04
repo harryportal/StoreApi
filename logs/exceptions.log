@@ -666,3 +666,91 @@
 [31m    at Module.load (node:internal/modules/cjs/loader:1037:32)[39m
 [31m    at Function.Module._load (node:internal/modules/cjs/loader:878:12)[39m
 [31m    at Module.require (node:internal/modules/cjs/loader:1061:19)[39m
+2023-03-03 10:10:52 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:18:42[39m
+
+[31m  15 static getProduct = async (req: Request, res: Response) => {[39m
+[31m  16   const id = req.params.id;[39m
+[31m  17 [39m
+[31m→ 18   const product = await prisma.product.findUnique([39m
+[31mThe column `Product.createdAt` does not exist in the current database.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:18:42[39m
+
+[31m  15 static getProduct = async (req: Request, res: Response) => {[39m
+[31m  16   const id = req.params.id;[39m
+[31m  17 [39m
+[31m→ 18   const product = await prisma.product.findUnique([39m
+[31mThe column `Product.createdAt` does not exist in the current database.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35024:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at RequestHandler.request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34991:12)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-03-03 10:10:52 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:18:42[39m
+
+[31m  15 static getProduct = async (req: Request, res: Response) => {[39m
+[31m  16   const id = req.params.id;[39m
+[31m  17 [39m
+[31m→ 18   const product = await prisma.product.findUnique([39m
+[31mThe column `Product.createdAt` does not exist in the current database.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:18:42[39m
+
+[31m  15 static getProduct = async (req: Request, res: Response) => {[39m
+[31m  16   const id = req.params.id;[39m
+[31m  17 [39m
+[31m→ 18   const product = await prisma.product.findUnique([39m
+[31mThe column `Product.createdAt` does not exist in the current database.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35024:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at RequestHandler.request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34991:12)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-03-03 10:32:13 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:18:42[39m
+
+[31m  15 static getProduct = async (req: Request, res: Response) => {[39m
+[31m  16   const id = req.params.id;[39m
+[31m  17 [39m
+[31m→ 18   const product = await prisma.product.findUnique([39m
+[31mThe column `Product.updatedAt` does not exist in the current database.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:18:42[39m
+
+[31m  15 static getProduct = async (req: Request, res: Response) => {[39m
+[31m  16   const id = req.params.id;[39m
+[31m  17 [39m
+[31m→ 18   const product = await prisma.product.findUnique([39m
+[31mThe column `Product.updatedAt` does not exist in the current database.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35024:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at RequestHandler.request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34991:12)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-03-03 10:32:13 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:18:42[39m
+
+[31m  15 static getProduct = async (req: Request, res: Response) => {[39m
+[31m  16   const id = req.params.id;[39m
+[31m  17 [39m
+[31m→ 18   const product = await prisma.product.findUnique([39m
+[31mThe column `Product.updatedAt` does not exist in the current database.[39m
+[31mError: [39m
+[31mInvalid `prisma.product.findUnique()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:18:42[39m
+
+[31m  15 static getProduct = async (req: Request, res: Response) => {[39m
+[31m  16   const id = req.params.id;[39m
+[31m  17 [39m
+[31m→ 18   const product = await prisma.product.findUnique([39m
+[31mThe column `Product.updatedAt` does not exist in the current database.[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35024:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at RequestHandler.request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34991:12)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
