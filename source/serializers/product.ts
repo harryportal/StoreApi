@@ -1,7 +1,8 @@
 import { IsNotEmpty, IsNumber, IsString, Max, Min } from 'class-validator';
 
-class ProductRating {
+export default class ProductRating {
   @IsString()
+  @IsNotEmpty()
   content: string;
 
   @Min(1)

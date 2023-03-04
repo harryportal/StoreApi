@@ -754,3 +754,47 @@
 [31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
 [31m    at RequestHandler.request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34991:12)[39m
 [31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-03-04 15:59:34 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.review.create()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:37:47[39m
+
+[31m  34 const { rating, content } = req.body;[39m
+[31m  35 const id = req.user.id;[39m
+[31m  36 [39m
+[31m→ 37 const productRating = await prisma.review.create([39m
+[31mUnique constraint failed on the fields: (`userId`,`productId`)[39m
+[31mError: [39m
+[31mInvalid `prisma.review.create()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:37:47[39m
+
+[31m  34 const { rating, content } = req.body;[39m
+[31m  35 const id = req.user.id;[39m
+[31m  36 [39m
+[31m→ 37 const productRating = await prisma.review.create([39m
+[31mUnique constraint failed on the fields: (`userId`,`productId`)[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35024:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at RequestHandler.request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34991:12)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-03-04 15:59:34 [31merror[39m: [31munhandledRejection: [39m
+[31mInvalid `prisma.review.create()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:37:47[39m
+
+[31m  34 const { rating, content } = req.body;[39m
+[31m  35 const id = req.user.id;[39m
+[31m  36 [39m
+[31m→ 37 const productRating = await prisma.review.create([39m
+[31mUnique constraint failed on the fields: (`userId`,`productId`)[39m
+[31mError: [39m
+[31mInvalid `prisma.review.create()` invocation in[39m
+[31mC:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\source\controllers\products.ts:37:47[39m
+
+[31m  34 const { rating, content } = req.body;[39m
+[31m  35 const id = req.user.id;[39m
+[31m  36 [39m
+[31m→ 37 const productRating = await prisma.review.create([39m
+[31mUnique constraint failed on the fields: (`userId`,`productId`)[39m
+[31m    at RequestHandler.handleRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:35024:13)[39m
+[31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
+[31m    at RequestHandler.request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34991:12)[39m
+[31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m

@@ -296,3 +296,22 @@
 2023-03-04 15:31:26 [32minfo[39m: [32mConnected to Database Successsfully[39m
 2023-03-04 15:32:55 [32minfo[39m: [32mListening on url http://localhost:8080[39m
 2023-03-04 15:32:55 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-04 15:37:45 [32minfo[39m: [32mListening on url http://localhost:8080[39m
+2023-03-04 15:37:46 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-04 15:46:29 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-04 15:46:29 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-04 15:59:05 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-04 15:59:05 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-04 16:10:25 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-04 16:10:25 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-04 16:11:35 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-04 16:11:35 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-04 16:12:36 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-04 16:12:37 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-04 16:14:13 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-04 16:14:14 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-04 16:14:31 [31merror[39m: [31m[ 'content must be a string' ][39m
+2023-03-04 16:15:31 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-04 16:15:31 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-04 16:15:37 [31merror[39m: [31m[ 'content should not be empty', 'content must be a string' ][39m
+2023-03-04 16:15:52 [31merror[39m: [31m[ 'content should not be empty', 'content must be a string' ][39m

@@ -25,3 +25,6 @@
 2023-03-04 15:25:33 [31merror[39m: [31mError Connecting to Database Database `EcommerceApi` does not exist on the database server at `localhost:5432`.[39m
 2023-03-04 15:25:49 [31merror[39m: [31mError Connecting to Database Database `EcommerceApi` does not exist on the database server at `localhost:5432`.[39m
 2023-03-04 15:25:59 [31merror[39m: [31mError Connecting to Database Database `EcommerceApi` does not exist on the database server at `localhost:5432`.[39m
+2023-03-04 16:14:31 [31merror[39m: [31m[ 'content must be a string' ][39m
+2023-03-04 16:15:37 [31merror[39m: [31m[ 'content should not be empty', 'content must be a string' ][39m
+2023-03-04 16:15:52 [31merror[39m: [31m[ 'content should not be empty', 'content must be a string' ][39m

@@ -28,39 +28,33 @@ export class Product {
     res.json({ success: true, data: product });
   };
 
-  // get products for a particular category order them by thier date of creation and add pagination also
-  static getProductsByCategory = async (req: Request, res: Response) => {
-    const categoryId = req.params.id;
-    const [take, skip] = current_page(req);
-
-    const products = await prisma.product.findMany({
-      where: { categoryId },
-      skip,
-      take,
-    });
-
-    res.json({ success: true, data: products });
-  };
-
-  static getCategories = async (req: Request, res: Response) => {
-
-    const categories = await prisma.category.findMany({});
-    res.json({ success: true, data: categories });
-
-  };
 
   // add ratings for a particular product
   static addReview = async (req: AuthRequest, res: Response) => {
     const { rating, content } = req.body;
     const id = req.user.id;
+    const productId = req.params.id
 
-    const productRating = await prisma.review.create({
-      data: {
+    // create a new review for product or update existing review if exist
+    const productRating = await prisma.review.upsert({
+      where:{
+        userId_productId:{
+          userId: id, productId
+        }
+      },
+      create:{
         rating,
         content,
         user: { connect: { id } },
         product: { connect: { id: req.params.id } },
       },
+      update: {
+        rating,
+        content
+      },
+      select:{
+        rating: true, content: true
+      }
     });
 
     res.json({ success: true, data: productRating });
