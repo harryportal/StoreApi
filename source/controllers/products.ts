@@ -8,7 +8,7 @@ export class Product {
 
   static getProducts = async (req: Request, res: Response) => {
     
-    const [take, skip] = current_page(req)   // pagination done
+    const [take, skip] = current_page(req, "product")   // pagination done
 
     const products = await prisma.product.findMany({
       skip, take
@@ -26,10 +26,10 @@ export class Product {
     const product = await prisma.product.findUnique({
       where: { id },
       include: { reviews: true, images:true },
-    }); // see how i can return only the first 5 ratings
+    }); // see how i can return only the first 5 ratings -- not neccessary again
 
-    if (!product) { return res.status(400).json({success:false, error:"No Product with given Id"}) }
-    
+    if (!product) { return res.status(404).json({success:false, error:"No Product with given Id"}) }
+
     res.json({ success: true, data: product });
   };
 
@@ -45,7 +45,7 @@ export class Product {
       where:{ id: productId}
     })
 
-    if (!product) { return res.status(400).json({success:false, error:"No Product with given Id"}) }
+    if (!product) { return res.status(404).json({success:false, error:"No Product with given Id"}) }
 
     // create a new review for product or update existing review if exist
     const productRating = await prisma.review.upsert({

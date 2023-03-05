@@ -1,12 +1,14 @@
 import { Response, Request } from 'express';
 import {prisma} from '../utils/db';
+import { current_page } from '../utils/page';
 
 
 export default class CategoriesController{
     // return all categories
     static getCategories = async (req: Request, res: Response) => {
-        
-        const categories = await prisma.category.findMany({});
+
+        const [take, skip] = current_page(req, "categories")   // pagination done 
+        const categories = await prisma.category.findMany({ take, skip});
         res.json({ success: true, data: categories });
     
       };
@@ -15,14 +17,16 @@ export default class CategoriesController{
     // get products for a particular category order them by thier date of creation and add pagination also
     static getProductsByCategory = async (req: Request, res: Response) => {
         const categoryId = req.params.id;
-       // const [take, skip] = current_page(req);
+       
         const categories = await prisma.category.findUnique({
             where:{
                 id: categoryId
             }, include:{
-                products: true
+                products: true, _count:{select:{products: true}}
             }
         })
+        if(!categories) { return res.status(404).json({success:false, message: "No Category with given Id"})}
+        
         res.json({ success: true, data: categories });
     };
 }

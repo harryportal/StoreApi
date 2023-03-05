@@ -357,3 +357,18 @@
 2023-03-05 18:12:08 [32minfo[39m: [32mConnected to Database Successsfully[39m
 2023-03-05 18:13:01 [32minfo[39m: [32mListening on url http://localhost:3000[39m
 2023-03-05 18:13:01 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-05 18:21:30 [31merror[39m: [31m[[39m
+[31m  'rating must be a number conforming to the specified constraints',[39m
+[31m  'rating must not be greater than 5',[39m
+[31m  'rating must not be less than 1'[39m
+[31m][39m
+2023-03-05 18:25:01 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-05 18:25:01 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-05 18:36:07 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-05 18:36:07 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-05 18:36:44 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-05 18:36:44 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-05 18:37:36 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-05 18:37:36 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-05 18:58:17 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-05 18:58:17 [32minfo[39m: [32mConnected to Database Successsfully[39m
