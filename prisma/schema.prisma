@@ -57,7 +57,7 @@ model Review {
   user      User     @relation(fields: [userId], references: [id])
   product   Product  @relation(fields: [productId], references: [id])
 
-  @@id([userId, productId])
+  @@id([userId, productId]) // a user can only make one review for a product
 }
 
 model Category {

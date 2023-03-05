@@ -798,3 +798,11 @@
 [31m    at RequestHandler.handleAndLogRequestError (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34996:12)[39m
 [31m    at RequestHandler.request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34991:12)[39m
 [31m    at async PrismaClient._request (C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:36082:16)[39m
+2023-03-05 18:08:28 [31merror[39m: [31munhandledRejection: No Product found[39m
+[31mNotFoundError: No Product found[39m
+[31m    at C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34217:15[39m
+[31m    at async C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34215:20[39m
+2023-03-05 18:08:28 [31merror[39m: [31munhandledRejection: No Product found[39m
+[31mNotFoundError: No Product found[39m
+[31m    at C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34217:15[39m
+[31m    at async C:\Users\KUYE_HARRY\Desktop\COOK\Ecommerce Api\node_modules\@prisma\client\runtime\index.js:34215:20[39m
