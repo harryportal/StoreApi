@@ -26,7 +26,7 @@ class ErrorHandler {
 
   static pagenotFound() {
     return (req: Request, res: Response, next: NextFunction) => {
-      throw new NotFoundError(req.path);
+      throw new NotFoundError(`Requested Path ${req.path} is not found`);
     };
   }
 
@@ -46,8 +46,8 @@ class ErrorHandler {
 }
 
 class NotFoundError extends ApiError {
-  constructor(path: string) {
-    super(`Requested Path ${path} is not found`, 404);
+  constructor(message: string) {
+    super(message, 404);
   }
 }
 

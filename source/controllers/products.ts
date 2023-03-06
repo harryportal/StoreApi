@@ -2,6 +2,7 @@ import { Response, Request } from 'express';
 import {prisma} from '../utils/db';
 import { current_page } from '../utils/page';
 import { AuthRequest } from '../utils/interface';
+import { NotFoundError } from '../middleware/error';
 
 export class Product {
   // returns all products ordered by their date of creation -- won't work since they have the same creation date
@@ -19,7 +20,7 @@ export class Product {
   };
 
 
-  // get a single product     --> returns the first few ratings
+  // get a single product  
   static getProduct = async (req: Request, res: Response) => {
     const id = req.params.id;
 
@@ -28,7 +29,7 @@ export class Product {
       include: { reviews: true, images:true },
     }); // see how i can return only the first 5 ratings -- not neccessary again
 
-    if (!product) { return res.status(404).json({success:false, error:"No Product with given Id"}) }
+    if (!product) { throw new NotFoundError("No Product with given Id") }
 
     res.json({ success: true, data: product });
   };
@@ -45,7 +46,7 @@ export class Product {
       where:{ id: productId}
     })
 
-    if (!product) { return res.status(404).json({success:false, error:"No Product with given Id"}) }
+    if (!product) { throw new NotFoundError("No Product with given Id") }
 
     // create a new review for product or update existing review if exist
     const productRating = await prisma.review.upsert({

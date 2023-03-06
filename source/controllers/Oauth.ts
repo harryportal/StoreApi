@@ -1,7 +1,9 @@
 import { Request, Response } from "express";
+import { AuthError } from "../middleware/error";
 import GoogleService from "../service/googleOauth";
 import { createJWT } from "../utils/auth";
 import {prisma } from "../utils/db";
+import logger from "../utils/winston";
 
 
 const googleService = new GoogleService();
@@ -23,10 +25,7 @@ export default class GoogleOauthController {
           const pathUrl = (req.query.state as string) || "/";
       
           if (!code) {
-            return res.status(401).json({
-              status: "fail",  
-              message: "Authorization code not provided!",  
-            });
+            throw new AuthError("Authorization code not provided!") ;
           }
       
           const { id_token, access_token } = await googleService.getToken({code});
@@ -38,10 +37,7 @@ export default class GoogleOauthController {
         
 
           if (!verified_email) {
-            return res.status(403).json({
-              status: "fail",
-              message: "Google account not verified",
-            });
+            throw new AuthError("Google Account not Verified!");
           }
       
           const user = await prisma.user.upsert({
@@ -61,7 +57,7 @@ export default class GoogleOauthController {
           res.redirect(`${FRONTEND_ORIGIN}/${token}`); // come back to this
 
         } catch (err: any) {
-          console.log("Failed to authorize Google User", err);
+          logger.error(`Failed to authorize Google User, error: ${err}`);
           return res.redirect(`${FRONTEND_ORIGIN}/oauth/error`);
         }
       };

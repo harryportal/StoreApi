@@ -1,7 +1,7 @@
 import {prisma} from '../utils/db';
 import { Request, Response } from 'express';
 import { comparePassword, createJWT, hashPassword } from '../utils/auth';
-import { BadRequestError } from '../middleware/error';
+import { AuthError, BadRequestError, NotFoundError } from '../middleware/error';
 import { AuthRequest } from '../utils/interface';
 
 
@@ -33,12 +33,12 @@ export default class AuthController {
       where: { email: req.body.email },
     });
 
-    if(!user) throw new BadRequestError("User Does not Exist!")
+    if(!user) throw new AuthError("Invalid Credentials!")
 
     const isValid = await comparePassword(req.body.password, user.password);
 
     if (!isValid) {
-      throw new BadRequestError('Authentication Failed!');
+      throw new AuthError('Invalid Credentials!');
     }
     const token = createJWT(user);
     res.json({ token });

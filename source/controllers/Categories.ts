@@ -1,4 +1,5 @@
 import { Response, Request } from 'express';
+import { NotFoundError } from '../middleware/error';
 import {prisma} from '../utils/db';
 import { current_page } from '../utils/page';
 
@@ -8,7 +9,7 @@ export default class CategoriesController{
     static getCategories = async (req: Request, res: Response) => {
 
         const [take, skip] = current_page(req, "categories")   // pagination done 
-        const categories = await prisma.category.findMany({ take, skip});
+        const categories = await prisma.category.findMany({ take, skip });
         res.json({ success: true, data: categories });
     
       };
@@ -22,10 +23,11 @@ export default class CategoriesController{
             where:{
                 id: categoryId
             }, include:{
-                products: true, _count:{select:{products: true}}
+                products: true
             }
         })
-        if(!categories) { return res.status(404).json({success:false, message: "No Category with given Id"})}
+
+        if(!categories) { throw new NotFoundError("No Category with given Id") }
         
         res.json({ success: true, data: categories });
     };

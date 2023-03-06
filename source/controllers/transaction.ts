@@ -2,7 +2,7 @@ import { Response, Request } from 'express';
 import {prisma} from '../utils/db';
 import { AuthRequest, FlutterwaveWebhookData, OrderDetails } from '../utils/interface';
 import { FlutterWaveService } from '../service/flutterwave';
-import { BadRequestError } from '../middleware/error';
+import { BadRequestError, NotFoundError } from '../middleware/error';
 
 class OrderController {
   static createOrder = async (req: AuthRequest, res: Response) => {
@@ -19,9 +19,12 @@ class OrderController {
     let totalPrice: number = 0;
     // get the price of each product and compute the total price as that is been done
     for (let order of ordertails) {
-      const product = await prisma.product.findUniqueOrThrow({
+      const product = await prisma.product.findUnique({
         where: { id: order.productId },
       });
+
+      if (!product) { throw new NotFoundError("No Product with given Id") }
+
       order.price = parseFloat(product!.price.toFixed());
       totalPrice += order.price * order.quantity;
     }
