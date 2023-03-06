@@ -1,5 +1,5 @@
+logs
 node_modules
 dist
 .env.development
 .env.test
-logs
