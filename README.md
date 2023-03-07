@@ -1,5 +1,6 @@
 # EcommerceApi_Node    
-This is an Ecommerce Api built with Node and TypeScript:rocket:[API DOCUMENTATION](https://documenter.getpostman.com/view/20276941/2s935hS7TG)
+This is an Ecommerce Api built with Node and TypeScript:rocket:
+CLICK [HERE] TO VIEW THE API DOCUMENTATION
 
 ***
 To run on a development server: 
@@ -9,25 +10,28 @@ To run on a development server:
 > cd EcommerceApi_Node
 > npm install
 ```
+
 ***
 Create a .env.test and .env.development and populate using the .env.sample file.
 ***
-Start the application and run migration:
+If you have docker installed, you can start the postgres database with ```npm run start:db```
+
 ```sh
-> npm run start
-> npm run migrate
+# run migrations on your database
+> npm run db:migrate
+# start server
+> npm run dev
 ```
 
-Set up test DB and run tests:
+To run the Unit and Integration test:
+- Create a test database or your use this command if you have docker installed to start the test db ```npm run test:db```
 ```sh
+# run migration
 > npm run migrate:test
+# run test
 > npm run test
 ```
-***
-Run `npm run logs` to view server logs
-***
-Run `npm run docker:down` to kill Server
-***
+
 ROADMAP:
 - [x] Dockerize the Application
 - [x] Set up model with Prisma
