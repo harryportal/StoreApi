@@ -3,20 +3,25 @@ import http from 'http';
 import * as dotenv from 'dotenv';
 import logger from './utils/winston';
 import {Prisma }from './utils/db';
+import { Application } from 'express';
 
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
-
-// start db
-const prisma = new Prisma();
-prisma.connectDB();
  
+class Server {
+  private port = process.env.PORT || 8000;
+  private app;
+  private prisma = new Prisma();
+  constructor(app: Application) {
+      this.app = app;
+  }
 
-const port = process.env.PORT || 3000;
-const startServer = () => {
-  const server: http.Server = app.listen(port, () => {
-    logger.info(`Listening on url http://localhost:${port}`);
-    return server;
-  });
-};
+  start() {
+      this.prisma.connectDB();
+      this.app.listen(this.port, () => {
+        logger.info(`Listening on url http://localhost:${this.port}`);
+      })
+  }
+}
 
-startServer();
+const server =  new Server(app);
+server.start()

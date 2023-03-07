@@ -70,3 +70,6 @@
 2023-03-07 11:27:34 [31merror[39m: [31mGoogle Oauth Credentials not Found or not Complete![39m
 2023-03-07 11:27:35 [31merror[39m: [31m[ 'email must be an email' ][39m
 2023-03-07 11:27:35 [31merror[39m: [31m[ 'email must be an email' ][39m
+2023-03-07 11:34:05 [31merror[39m: [31mError Connecting to Database Can't reach database server at `localhost`:`5432`[39m
+
+[31mPlease make sure your database server is running at `localhost`:`5432`.[39m
