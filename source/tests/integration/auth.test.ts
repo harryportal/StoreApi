@@ -1,6 +1,6 @@
 import request from 'supertest';
 import app from '../../app';
-import prisma from '../../utils/db';
+import {prisma } from '../../utils/db';
 
 describe('Test for Signing Up Endpoint', () => {
   it('Should send a 200 status code if all input is valid', async () => {
