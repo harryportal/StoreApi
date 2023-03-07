@@ -1,4 +1,4 @@
-import { IsDefined, IsEmail, IsNotEmpty, IsOptional, IsPhoneNumber, IsString, Length } from 'class-validator';
+import { IsDefined, IsEmail, IsOptional, IsPhoneNumber, IsString, Length } from 'class-validator';
 
 class SignIn {
   @IsEmail()
