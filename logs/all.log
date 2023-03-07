@@ -415,3 +415,16 @@
 2023-03-06 12:25:25 [32minfo[39m: [32mConnected to Database Successsfully[39m
 2023-03-06 12:26:06 [32minfo[39m: [32mListening on url http://localhost:3000[39m
 2023-03-06 12:26:06 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-07 10:37:08 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-07 10:37:09 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-07 10:38:20 [31merror[39m: [31mFailed to authorize Google User, error: Error: Google Account not Verified![39m
+2023-03-07 10:38:33 [31merror[39m: [31mFailed to authorize Google User, error: Error: Google Account not Verified![39m
+2023-03-07 10:38:42 [31merror[39m: [31mFailed to authorize Google User, error: Error: Google Account not Verified![39m
+2023-03-07 10:49:13 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-07 10:49:13 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-07 10:51:38 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-07 10:51:39 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-07 10:57:48 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-07 10:57:48 [32minfo[39m: [32mConnected to Database Successsfully[39m
+2023-03-07 10:58:23 [32minfo[39m: [32mListening on url http://localhost:3000[39m
+2023-03-07 10:58:23 [32minfo[39m: [32mConnected to Database Successsfully[39m
