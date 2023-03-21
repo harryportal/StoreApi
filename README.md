@@ -42,6 +42,6 @@ ROADMAP:
 - [x] Add Logging with winston
 - [x] Write Unit and Integration Test
 - [x] Implement Sign in with Google
-- [ ] Seed the database with bdummy Data: 
+- [x] Seed the database with bdummy Data: 
 - [x] Deploy to Heroku:rocket: 
 
