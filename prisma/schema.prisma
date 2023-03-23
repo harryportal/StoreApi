@@ -84,7 +84,7 @@ model OrderDetails {
   order     Order   @relation(fields: [orderId], references: [id])
   quantity  Int
   price     Decimal
-
+  
   @@id([productId, orderId])
 }
 

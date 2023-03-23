@@ -1,5 +1,4 @@
 import app from './app';
-import http from 'http';
 import * as dotenv from 'dotenv';
 import logger from './utils/winston';
 import {Prisma }from './utils/db';

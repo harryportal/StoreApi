@@ -57,3 +57,10 @@ export interface GoogleOauthToken {
   token_type: string;
   scope: string;
 }
+
+export default interface MailInterface {
+  to: string | string[];
+  subject: string;
+  text?: string;
+  html?: string;
+}
