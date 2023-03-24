@@ -1,6 +1,6 @@
 # EcommerceApi_Node    
 This is an Ecommerce Api built with Node and TypeScript:rocket:
-CLICK [HERE] TO VIEW THE API DOCUMENTATION
+CLICK [HERE](https://documenter.getpostman.com/view/20276941/2s935hS7TG) TO VIEW THE API DOCUMENTATION
 
 ***
 To run on a development server: 
@@ -42,6 +42,6 @@ ROADMAP:
 - [x] Add Logging with winston
 - [x] Write Unit and Integration Test
 - [x] Implement Sign in with Google
-- [ ] Seed the database with bdummy Data: 
+- [x] Seed the database with dummy Data: 
 - [x] Deploy to Heroku:rocket: 
 
