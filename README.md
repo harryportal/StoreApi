@@ -1,6 +1,14 @@
-# EcommerceApi_Node    
 This is an Ecommerce Api built with Node and TypeScript :rocket:
 CLICK [HERE](https://documenter.getpostman.com/view/20276941/2s935hS7TG) TO VIEW THE API DOCUMENTATION
+
+#### API FEATURES
+- Authentication ( Regular and Google Sign on )
+- Retrieving all available categories of products
+- Filtering Products by Category
+- Getting all the Products ( paginated to a defined limit )
+- Getting details of a single product
+- Ordering and paying for a single or multiple products
+- Adding a review to a product
 
 ***
 To run on a development server: 
