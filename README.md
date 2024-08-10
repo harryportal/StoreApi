@@ -1,5 +1,5 @@
 # EcommerceApi_Node    
-This is an Ecommerce Api built with Node and TypeScript:rocket:
+This is an Ecommerce Api built with Node and TypeScript :rocket:
 CLICK [HERE](https://documenter.getpostman.com/view/20276941/2s935hS7TG) TO VIEW THE API DOCUMENTATION
 
 ***
