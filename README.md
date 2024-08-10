@@ -41,7 +41,7 @@ ROADMAP:
 - [x] Implement Payment Endpoints with Flutterwave Api
 - [x] Add Logging with winston
 - [x] Write Unit and Integration Test
-- [x] Implement Sign in with Google
-- [x] Seed the database with dummy Data: 
-- [x] Deploy to Heroku:rocket: 
+- [x] Implement Google SignOn
+- [x] Seed the database with dummy Data 
+- [x] Deploy to Heroku :rocket: 
 
